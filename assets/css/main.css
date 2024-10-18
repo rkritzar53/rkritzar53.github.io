@@ -57,21 +57,33 @@ body {
 /* Header Section */
 header#header {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
     border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header#header h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    margin: 0; /* Remove bottom margin */
 }
 
 header#header p {
     font-size: 1.2rem;
     color: #666;
-    margin-top: 0;
+    margin-top: 5px; /* Adjust space above tagline */
 }
 
 /* Section Titles */
