@@ -1,163 +1,219 @@
-/* Base Styles for Desktop and General Layout */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #007bff;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    color: white;
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+a {
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    display: block;
+    color: inherit;
 }
 
-nav ul li a:hover {
-    background-color: #0056b3;
-    border-radius: 5px;
-}
-
-/* Main Section Styles */
-main {
-    padding: 20px;
-}
-
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-main p, main ul {
-    font-size: 1.1rem;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
+h1, h2, h3 {
+    margin: 20px 0;
     text-align: center;
-    padding: 10px;
-}
-
-footer .social-media a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-footer .social-media a:hover {
     color: #007bff;
 }
 
-/* Make Social Icons Larger on Mobile */
-footer .social-media a {
-    font-size: 30px;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Media Queries for Mobile */
-@media only screen and (max-width: 768px) {
-    /* Responsive Navigation */
-    nav ul {
+li {
+    margin-bottom: 10px;
+}
+
+/* Header */
+#header {
+    background-color: #007bff;
+    padding: 20px 0;
+}
+
+#header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#nav ul li {
+    margin: 0 15px;
+}
+
+#nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Main Section */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Footer */
+#footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 40px;
+}
+
+#footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffeb3b;
+}
+
+/* Social Media Icons Colors */
+.social-media a .fa-linkedin {
+    color: #0077b5;
+}
+
+.social-media a .fa-facebook {
+    color: #3b5998;
+}
+
+.social-media a .fa-twitter {
+    color: #1da1f2;
+}
+
+.social-media a .fa-instagram {
+    color: #e1306c;
+}
+
+.social-media a .fa-tiktok {
+    color: #000000;
+}
+
+.social-media a .fa-indeed {
+    color: #0a66c2;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] i {
+    margin-left: 10px;
+}
+
+/* Contact Section */
+#contact-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#contact-section h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+#contact-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.modern-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Resume Page Styles */
+#resume-section ul {
+    padding-left: 20px;
+}
+
+#resume-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
+    #nav ul li {
         margin: 10px 0;
     }
 
-    nav ul li a {
-        font-size: 1.5rem;
-    }
-
-    /* Header Text Size Adjustment */
-    header h1 {
-        font-size: 2rem;
-    }
-
-    /* Adjust Padding and Layout for Main Content */
-    main {
-        padding: 15px;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-    }
-
-    main p, main ul {
-        font-size: 1rem;
-    }
-
-    /* Contact Form Adjustments */
-    .modern-form {
+    #contact-section {
         padding: 20px;
-        width: 90%;
     }
 
-    /* Footer Social Media Icons */
-    footer .social-media {
-        margin: 20px 0;
-    }
-
-    footer .social-media a {
-        font-size: 28px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Header Text Size Adjustment for Small Screens */
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    /* Navigation Links Larger for Tapping */
-    nav ul li a {
-        font-size: 1.4rem;
-    }
-
-    /* Main Content Font Size for Small Screens */
-    main h2 {
-        font-size: 1.3rem;
-    }
-
-    main p, main ul {
-        font-size: 0.95rem;
-    }
-
-    /* Contact Form Spacing and Padding */
-    .modern-form {
-        padding: 15px;
-    }
-
-    /* Footer Text Adjustment for Small Screens */
-    footer {
-        padding: 15px;
+    button[type="submit"] {
+        width: 100%;
     }
 }
