@@ -84,15 +84,10 @@ h2 {
     padding-bottom: 5px;
 }
 
-h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 15px;
-}
-
 /* Main Content Styling */
-main {
-    margin: 20px 0; /* Space around main content */
+section#main {
+    margin: 40px 0;
+    padding: 20px;
 }
 
 /* Table Styling */
@@ -141,7 +136,7 @@ table tr:hover {
 
 .input-container {
     position: relative;
-    margin-bottom: 20px; /* Increased space between fields */
+    margin-bottom: 30px;
 }
 
 .input-container input,
@@ -203,15 +198,6 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Project Styling in Portfolio */
-.project {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Footer Styling */
 #footer {
     background-color: #f7f7f7;
@@ -223,4 +209,20 @@ input[type="submit"]:hover {
 #footer p {
     margin: 0;
     color: #007bff;
+}
+
+/* Remove underline from specific elements */
+.no-underline {
+    text-decoration: none;
+    color: #007bff; /* Match the link color from your theme */
+}
+
+/* Optional: If you want all links to match the theme */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline for all links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Underline on hover */
 }
