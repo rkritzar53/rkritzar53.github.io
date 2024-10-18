@@ -56,21 +56,30 @@ body {
 
 /* Header Section */
 header#header {
-    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
     padding: 20px;
     border-bottom: 1px solid #e6e6e6;
+}
+
+.header-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-grow: 1; /* Allow the text section to grow */
+    align-items: center; /* Center items vertically */
 }
 
 .logo-container {
-    margin-bottom: 10px; /* Space between logo and text */
+    margin-right: 20px; /* Space between logo and text */
 }
 
 .logo {
     width: 150px; /* Adjust the size as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+.text-content {
+    text-align: center; /* Center text content */
+    flex-grow: 1; /* Allow this section to take remaining space */
 }
 
 header#header h1 {
