@@ -57,7 +57,7 @@ body {
 /* Header Section */
 header#header {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0; /* More vertical padding for better spacing */
     border-bottom: 1px solid #e6e6e6;
 }
 
@@ -65,20 +65,20 @@ header#header h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    margin: 0 0 10px; /* Remove bottom margin for better spacing */
 }
 
 header#header p {
     font-size: 1.2rem;
     color: #666;
-    margin-top: 0;
+    margin: 0; /* Remove margin for better alignment */
 }
 
 /* Section Titles */
 h2 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin: 30px 0 15px; /* Add top margin for spacing above section */
     color: #333;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
@@ -94,7 +94,7 @@ section#main {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 25px;
+    margin-bottom: 30px; /* More space below tables */
     font-size: 16px;
     text-align: left;
 }
@@ -192,6 +192,7 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
+    margin-top: 10px; /* Add margin above submit button */
 }
 
 input[type="submit"]:hover {
@@ -204,6 +205,7 @@ input[type="submit"]:hover {
     padding: 20px;
     text-align: center;
     border-top: 1px solid #e6e6e6;
+    margin-top: 40px; /* Add top margin for spacing above footer */
 }
 
 #footer p {
