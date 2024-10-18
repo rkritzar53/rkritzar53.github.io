@@ -1,53 +1,65 @@
-/* General body styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
+/* Reset some basic styles */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* Navigation */
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+#header {
+    background-color: #007bff; /* Header background color */
+    color: #fff; /* Text color */
+    padding: 10px 0;
+}
+
 #nav {
-    background-color: #007bff;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#nav h1 {
+    font-size: 1.8em;
 }
 
 #nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
+    display: flex;
 }
 
 #nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 #nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: 500;
 }
 
-/* Main Section */
+#nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styles */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/* Section Titles */
-h2 {
-    font-size: 24px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-}
-
-/* Project and Resume Section Styles */
-.project, .resume-item {
+/* Section styles */
+.resume-section {
     margin: 20px 0;
     padding: 15px;
     border: 1px solid #e6e6e6;
@@ -55,29 +67,76 @@ h2 {
     background-color: #fff;
 }
 
-/* Footer */
+.resume-section h2 {
+    color: #007bff; /* Match section header color with the theme */
+}
+
+/* Footer styles */
 #footer {
-    background-color: #f7f7f7;
+    background-color: #007bff; /* Footer background color */
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
+    padding: 10px 0;
+    position: relative;
 }
 
 #footer .social-media {
     margin-top: 10px;
 }
 
-#footer a {
+#footer .social-media a {
+    color: #fff; /* Default color */
     margin: 0 10px;
-    color: inherit;
+    text-decoration: none;
+    font-size: 1.5em; /* Icon size */
 }
 
-/* Responsive Design */
+#footer .social-media a:hover {
+    opacity: 0.7; /* Hover effect */
+}
+
+/* Style for individual social media links */
+#footer .social-media a[href*="linkedin.com"] {
+    color: #0077B5;
+}
+
+#footer .social-media a[href*="facebook.com"] {
+    color: #1877F2;
+}
+
+#footer .social-media a[href*="x.com"] {
+    color: #1DA1F2;
+}
+
+#footer .social-media a[href*="instagram.com"] {
+    color: #C13584;
+}
+
+#footer .social-media a[href*="tiktok.com"] {
+    color: #69C9D0;
+}
+
+#footer .social-media a[href*="indeed.com"] {
+    color: #F9A825;
+}
+
+/* No underline class for email links */
+.no-underline {
+    text-decoration: none;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     #nav ul {
         flex-direction: column;
+        align-items: flex-start;
     }
-    
+
     #nav ul li {
         margin: 10px 0;
     }
