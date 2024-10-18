@@ -152,7 +152,7 @@ table tr:hover {
 .fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Add space between fields */
+    gap: 20px; /* Space between fields */
 }
 
 .input-container {
@@ -160,9 +160,9 @@ table tr:hover {
     margin-bottom: 30px; /* Ensure there's space below each field */
 }
 
-/* Add specific margin for the name and email containers */
-.input-container:first-child {
-    margin-right: 20px; /* Space between name and email */
+/* Add margin to the first input container if necessary */
+.input-container:nth-child(1) {
+    margin-right: 0; /* Remove right margin from the first container */
 }
 
 .input-container input,
