@@ -1,50 +1,93 @@
 /* General body styling */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Container for site sections */
 #wrapper {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 30px 15px;
-    background-color: #ffffff;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    flex-grow: 1;
 }
 
 /* Navigation */
+#nav {
+    background-color: #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
 #nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 #nav ul li a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 #nav ul li a:hover {
-    color: #0056b3;
+    color: #d1e3ff;
+}
+
+/* Header Section */
+header#header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+header#header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header#header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0;
 }
 
 /* Section Titles */
 h2 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 15px;
     color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Main Content Styling */
+section#main {
+    margin: 40px 0;
+    padding: 20px;
 }
 
 /* Table Styling */
@@ -52,6 +95,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 25px;
+    font-size: 16px;
+    text-align: left;
 }
 
 table th, table td {
@@ -74,29 +119,18 @@ table tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Footer Styling */
-#footer {
-    background-color: #f7f7f7;
-    padding: 40px;
-    text-align: center;
-}
-
-#footer p, #footer a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-/* Form Styling */
+/* Modern Form Styling */
 .modern-form {
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin: 30px 0;
 }
 
 .fields {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -108,7 +142,7 @@ table tr:hover {
 .input-container input,
 .input-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
@@ -119,31 +153,20 @@ table tr:hover {
 .input-container input:focus,
 .input-container textarea:focus {
     border-color: #007bff;
+    background-color: white;
     outline: none;
-    background-color: #fff;
 }
 
 .input-container label {
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
+    top: -10px;
+    left: 12px;
+    background: #fff;
     padding: 0 5px;
-    font-size: 16px;
-    color: #aaa;
+    font-size: 14px;
+    color: #777;
     transition: all 0.3s ease;
     pointer-events: none;
-}
-
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label,
-.input-container textarea:focus + label,
-.input-container textarea:not(:placeholder-shown) + label {
-    top: -10px;
-    left: 5px;
-    font-size: 12px;
-    color: #007bff;
 }
 
 .validation-msg {
@@ -164,12 +187,26 @@ input[type="submit"] {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 15px 25px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+#footer p {
+    margin: 0;
+    color: #007bff;
 }
