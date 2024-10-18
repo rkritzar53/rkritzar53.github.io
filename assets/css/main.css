@@ -23,18 +23,12 @@ body {
     flex-grow: 1;
 }
 
-/* Header and Navigation */
+/* Navigation */
 #nav {
     background-color: #007bff;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 40px;
-}
-
-#nav h1 {
-    color: white;
-    text-align: center;
-    margin: 0 0 10px;
 }
 
 #nav ul {
@@ -90,10 +84,15 @@ h2 {
     padding-bottom: 5px;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
 /* Main Content Styling */
 main {
-    margin: 40px 0;
-    padding: 20px;
+    margin: 20px 0; /* Space around main content */
 }
 
 /* Table Styling */
@@ -105,8 +104,7 @@ table {
     text-align: left;
 }
 
-table th,
-table td {
+table th, table td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
@@ -143,7 +141,7 @@ table tr:hover {
 
 .input-container {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Increased space between fields */
 }
 
 .input-container input,
@@ -203,6 +201,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+/* Project Styling in Portfolio */
+.project {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
