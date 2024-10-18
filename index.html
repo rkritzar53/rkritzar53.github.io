@@ -1,43 +1,93 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Home | River Kritzar</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Link to your CSS file -->
+    <title>Home|River Kritzar</title>
 </head>
 <body>
-
-    <!-- Wrapper -->
     <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <h1>Welcome to My Personal Website</h1>
-        </header>
-
         <!-- Navigation -->
         <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resume</a></li>
             </ul>
         </nav>
 
-        <!-- Main Content -->
+        <!-- Header Section -->
+        <header id="header">
+            <h1>Welcome to Our Website</h1>
+            <p>Your tagline goes here.</p>
+        </header>
+
+        <!-- Main Content Section -->
         <section id="main">
-            <h2>Hello! I'm River Kritzar</h2>
-            <p>Welcome to my personal website. Feel free to browse my resume, learn more about me, or reach out using the contact form.</p>
+            <h2>Main Section Title</h2>
+            <p>Your main content goes here. This can include text, images, etc.</p>
+
+            <!-- Table Example -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                    <tr>
+                        <td>Data 7</td>
+                        <td>Data 8</td>
+                        <td>Data 9</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Form Example -->
+            <div class="modern-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="fields">
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                            <div class="validation-msg">Name is required.</div>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <div class="validation-msg">Valid email is required.</div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                        <div class="validation-msg">Message cannot be empty.</div>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
         </section>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <p>&copy; 2024 River Kritzar</p>
-        </footer>
-
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 River Kritzar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
