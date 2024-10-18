@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header id="header">
@@ -19,23 +21,20 @@
     </header>
 
     <main>
-        <section id="contact">
+        <section id="contact-section">
             <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out to us!</p>
+            <p>Feel free to reach out for any inquiries or collaborations!</p>
 
-            <!-- Updated Formspree Form -->
             <form action="https://formspree.io/f/mkgnnlva" method="POST" class="modern-form">
-                <div class="fields">
-                    <div class="input-container">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </div>
-                <input type="submit" value="Send Message">
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
             </form>
         </section>
     </main>
@@ -43,27 +42,13 @@
     <footer id="footer">
         <p>&copy; 2024 River Kritzar. All rights reserved.</p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://x.com/KritzarRiver" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/riverkritzar" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@riverkritzar97" target="_blank">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://profile.indeed.com/" target="_blank">
-                <i class="fab fa-indeed"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/KritzarRiver" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/riverkritzar" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@riverkritzar97" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://profile.indeed.com/" target="_blank"><i class="fab fa-indeed"></i></a>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
