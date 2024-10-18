@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Your Portfolio</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -14,29 +14,29 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="main">
-            <h2>Contact Me</h2>
-  <form
-  action="https://formspree.io/f/mkgnnlva"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+
+            <!-- Updated Formspree Form -->
+            <form action="https://formspree.io/f/mkgnnlva" method="POST" class="modern-form">
+                <div class="fields">
+                    <div class="input-container">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Send Message">
+            </form>
         </section>
     </main>
 
@@ -58,10 +58,12 @@
             <a href="https://www.tiktok.com/@riverkritzar97" target="_blank">
                 <i class="fab fa-tiktok"></i>
             </a>
-            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-notifcenter" target="_blank">
+            <a href="https://profile.indeed.com/" target="_blank">
                 <i class="fab fa-indeed"></i>
             </a>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
