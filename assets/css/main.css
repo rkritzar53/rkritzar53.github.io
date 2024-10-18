@@ -1,84 +1,103 @@
 /* General body styling */
 body {
-    font-family: 'Roboto', sans-serif; /* Match font style */
-    background-color: #f7f9fc; /* Background color */
-    color: #333; /* Text color */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    line-height: 1.6; /* Line height for readability */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Container for the entire page */
+/* Wrapper for the entire page */
 #wrapper {
-    max-width: 1100px; /* Match maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Padding inside the container */
-    background-color: #fff; /* White background for content */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow */
-    border-radius: 10px; /* Rounded corners */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header */
-#header {
-    text-align: center; /* Center align text */
-    margin-bottom: 20px; /* Space below header */
+/* Navigation */
+#nav {
+    background-color: #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 
-#header h1 {
-    font-size: 2.5rem; /* Header font size */
-    font-weight: 700; /* Bold font */
-    color: #007bff; /* Match theme color */
+#nav h1 {
+    color: white; /* Your name color */
 }
 
-#header p {
-    font-size: 1.2rem; /* Subheader font size */
-    color: #666; /* Subheader color */
+#nav nav {
+    display: flex; /* Flex for horizontal alignment */
 }
 
-/* Section Titles */
-h2 {
-    font-size: 24px; /* Section title font size */
-    font-weight: 600; /* Semi-bold font */
-    color: #333; /* Dark text color */
-    border-bottom: 2px solid #007bff; /* Underline section titles with theme color */
-    padding-bottom: 5px; /* Space below section title */
-    margin-top: 40px; /* Space above section title */
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flex for horizontal alignment */
+    justify-content: center; /* Center nav items */
 }
 
-/* Job and School Styling */
-.job, .school {
-    margin-bottom: 20px; /* Space between job/school entries */
+#nav ul li {
+    margin: 0 15px;
 }
 
-h3 {
-    font-size: 1.5rem; /* Job/school title font size */
-    color: #333; /* Title color */
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-/* Contact Section */
-#contact p {
-    margin: 5px 0; /* Space between contact info */
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 
-/* Skills Section */
-#skills ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+#hero h2 {
+    font-size: 2.5rem;
+    color: #333;
 }
 
-#skills li {
-    background-color: #007bff; /* Skill item background color */
-    color: white; /* Skill item text color */
-    padding: 5px 10px; /* Space inside skill items */
-    border-radius: 5px; /* Rounded corners */
-    margin: 5px 0; /* Space between skill items */
+#hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 #footer {
-    text-align: center; /* Center footer text */
-    padding: 20px; /* Space inside footer */
-    background-color: #f7f7f7; /* Match footer background */
-    border-top: 1px solid #e6e6e6; /* Top border */
-    margin-top: 20px; /* Space above footer */
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* Button Styles */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
