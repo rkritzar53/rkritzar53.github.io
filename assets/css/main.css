@@ -6,234 +6,76 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Container for site sections */
+/* Container for the entire page */
 #wrapper {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    flex-grow: 1;
+    max-width: 900px; /* Adjust maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Navigation */
-#nav {
-    background-color: #007bff;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+/* Header */
+#header {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below header */
 }
 
-#nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+#header h1 {
+    font-size: 2.5rem; /* Header font size */
+    font-weight: 700; /* Bold font */
 }
 
-#nav ul li {
-    margin: 0 15px;
-}
-
-#nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-#nav ul li a:hover {
-    color: #d1e3ff;
-}
-
-/* Header Section */
-header#header {
-    display: flex;
-    align-items: center; /* Vertically center the logo and text */
-    padding: 20px;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.header-content {
-    display: flex;
-    flex-grow: 1; /* Allow the text section to grow */
-    align-items: center; /* Center items vertically */
-}
-
-.logo-container {
-    margin-right: 20px; /* Space between logo and text */
-}
-
-.logo {
-    width: 150px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.text-content {
-    text-align: center; /* Center text content */
-    flex-grow: 1; /* Allow this section to take remaining space */
-}
-
-header#header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0; /* Remove bottom margin */
-}
-
-header#header p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: 5px; /* Adjust space above tagline */
+#header p {
+    font-size: 1.2rem; /* Subheader font size */
+    color: #666; /* Subheader color */
 }
 
 /* Section Titles */
 h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #333;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
+    font-size: 1.8rem; /* Section title font size */
+    color: #007bff; /* Section title color */
+    border-bottom: 2px solid #007bff; /* Underline section titles */
+    padding-bottom: 5px; /* Space below section title */
+    margin-top: 20px; /* Space above section title */
 }
 
-/* Main Content Styling */
-section#main {
-    margin: 40px 0;
-    padding: 20px;
+/* Job and School Styling */
+.job, .school {
+    margin-bottom: 20px; /* Space between job/school entries */
 }
 
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 25px;
-    font-size: 16px;
-    text-align: left;
+h3 {
+    font-size: 1.5rem; /* Job/school title font size */
+    color: #333; /* Title color */
 }
 
-table th, table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
+/* Contact Section */
+#contact p {
+    margin: 5px 0; /* Space between contact info */
 }
 
-table th {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
+/* Skills Section */
+#skills ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+#skills li {
+    background-color: #007bff; /* Skill item background color */
+    color: white; /* Skill item text color */
+    padding: 5px 10px; /* Space inside skill items */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px 0; /* Space between skill items */
 }
 
-table tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Modern Form Styling */
-.modern-form {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-    margin: 30px 0;
-}
-
-.fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between fields */
-}
-
-.input-container {
-    position: relative;
-    margin-bottom: 30px; /* Ensure there's space below each field */
-}
-
-/* Add margin to the first input container if necessary */
-.input-container:nth-child(1) {
-    margin-right: 0; /* Remove right margin from the first container */
-}
-
-.input-container input,
-.input-container textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: #f9f9f9;
-}
-
-.input-container input:focus,
-.input-container textarea:focus {
-    border-color: #007bff;
-    background-color: white;
-    outline: none;
-}
-
-.input-container label {
-    position: absolute;
-    top: -10px;
-    left: 12px;
-    background: #fff;
-    padding: 0 5px;
-    font-size: 14px;
-    color: #777;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.validation-msg {
-    display: none;
-    font-size: 12px;
-    color: #ff6666;
-    position: absolute;
-    bottom: -20px;
-    left: 10px;
-}
-
-input:invalid ~ .validation-msg,
-textarea:invalid ~ .validation-msg {
-    display: block;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    margin-top: 20px; /* Space above the submit button */
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styling */
+/* Footer */
 #footer {
-    background-color: #f7f7f7;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #e6e6e6;
-}
-
-#footer p {
-    margin: 0;
-    color: #007bff;
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Space inside footer */
+    border-top: 1px solid #e6e6e6; /* Top border */
+    margin-top: 20px; /* Space above footer */
 }
