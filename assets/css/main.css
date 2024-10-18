@@ -205,12 +205,50 @@ input[type="submit"]:hover {
     padding: 20px;
     text-align: center;
     border-top: 1px solid #e6e6e6;
-    margin-top: 40px; /* Add top margin for spacing above footer */
 }
 
 #footer p {
     margin: 0;
     color: #007bff;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.linkedin {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.facebook {
+    color: #3b5998; /* Facebook color */
+}
+
+.twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+.instagram {
+    color: #e1306c; /* Instagram color */
+}
+
+.tiktok {
+    color: #69c9d0; /* TikTok color */
+}
+
+.indeed {
+    color: #f47c20; /* Indeed color */
 }
 
 /* Remove underline from specific elements */
