@@ -1,41 +1,25 @@
 /* General body styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f7f9fc;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Container for site sections */
-#wrapper {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    flex-grow: 1;
 }
 
 /* Navigation */
 #nav {
     background-color: #007bff;
     padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    text-align: center;
 }
 
 #nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    display: inline-flex;
 }
 
 #nav ul li {
@@ -46,223 +30,55 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease;
 }
 
-#nav ul li a:hover {
-    color: #d1e3ff;
-}
-
-/* Header Section */
-header#header {
-    text-align: center;
-    padding: 20px 0; /* More vertical padding for better spacing */
-    border-bottom: 1px solid #e6e6e6;
-}
-
-header#header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 10px; /* Remove bottom margin for better spacing */
-}
-
-header#header p {
-    font-size: 1.2rem;
-    color: #666;
-    margin: 0; /* Remove margin for better alignment */
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 /* Section Titles */
 h2 {
     font-size: 24px;
-    font-weight: 600;
-    margin: 30px 0 15px; /* Add top margin for spacing above section */
-    color: #333;
     border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
-/* Main Content Styling */
-section#main {
-    margin: 40px 0;
-    padding: 20px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px; /* More space below tables */
-    font-size: 16px;
-    text-align: left;
-}
-
-table th, table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-}
-
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-table tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Modern Form Styling */
-.modern-form {
+/* Project and Resume Section Styles */
+.project, .resume-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
     background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-    margin: 30px 0;
 }
 
-.fields {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.input-container {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.input-container input,
-.input-container textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: #f9f9f9;
-}
-
-.input-container input:focus,
-.input-container textarea:focus {
-    border-color: #007bff;
-    background-color: white;
-    outline: none;
-}
-
-.input-container label {
-    position: absolute;
-    top: -10px;
-    left: 12px;
-    background: #fff;
-    padding: 0 5px;
-    font-size: 14px;
-    color: #777;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.validation-msg {
-    display: none;
-    font-size: 12px;
-    color: #ff6666;
-    position: absolute;
-    bottom: -20px;
-    left: 10px;
-}
-
-input:invalid ~ .validation-msg,
-textarea:invalid ~ .validation-msg {
-    display: block;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    margin-top: 10px; /* Add margin above submit button */
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styling */
+/* Footer */
 #footer {
     background-color: #f7f7f7;
-    padding: 20px;
     text-align: center;
-    border-top: 1px solid #e6e6e6;
+    padding: 20px;
+    margin-top: auto;
 }
 
-#footer p {
-    margin: 0;
-    color: #007bff;
-}
-
-/* Social Media Icons */
-.social-media {
+#footer .social-media {
     margin-top: 10px;
 }
 
-.social-icon {
-    font-size: 24px; /* Icon size */
-    margin: 0 10px; /* Space between icons */
-    transition: transform 0.3s;
+#footer a {
+    margin: 0 10px;
+    color: inherit;
 }
 
-.social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-.linkedin {
-    color: #0077b5; /* LinkedIn color */
-}
-
-.facebook {
-    color: #3b5998; /* Facebook color */
-}
-
-.twitter {
-    color: #1da1f2; /* Twitter color */
-}
-
-.instagram {
-    color: #e1306c; /* Instagram color */
-}
-
-.tiktok {
-    color: #69c9d0; /* TikTok color */
-}
-
-.indeed {
-    color: #f47c20; /* Indeed color */
-}
-
-/* Remove underline from specific elements */
-.no-underline {
-    text-decoration: none;
-    color: #007bff; /* Match the link color from your theme */
-}
-
-/* Optional: If you want all links to match the theme */
-a {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* Remove underline for all links */
-}
-
-a:hover {
-    text-decoration: underline; /* Optional: Underline on hover */
+/* Responsive Design */
+@media (max-width: 768px) {
+    #nav ul {
+        flex-direction: column;
+    }
+    
+    #nav ul li {
+        margin: 10px 0;
+    }
 }
