@@ -160,6 +160,11 @@ table tr:hover {
     margin-bottom: 30px; /* Ensure there's space below each field */
 }
 
+/* Add specific margin for the name and email containers */
+.input-container:first-child {
+    margin-right: 20px; /* Space between name and email */
+}
+
 .input-container input,
 .input-container textarea {
     width: 100%;
