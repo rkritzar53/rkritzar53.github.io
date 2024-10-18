@@ -1,253 +1,163 @@
-/* Reset some basic styles */
-* {
+/* Base Styles for Desktop and General Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header styles */
-#header {
-    background-color: #007bff; /* Header background color */
-    color: #fff; /* Text color */
-    padding: 10px 0;
-}
-
-#nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-#nav h1 {
-    font-size: 1.8em;
-}
-
-#nav ul {
-    list-style: none;
-    display: flex;
-}
-
-#nav ul li {
-    margin-left: 20px;
-}
-
-#nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Main content styles */
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-/* Section styles */
-.resume-section {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.resume-section h2 {
-    color: #007bff; /* Match section header color with the theme */
-}
-
-/* Footer styles */
-#footer {
-    background-color: #007bff; /* Footer background color */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-}
-
-#footer .social-media {
-    margin-top: 10px;
-}
-
-#footer .social-media a {
-    color: #fff; /* Default color */
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.5em; /* Icon size */
-}
-
-#footer .social-media a:hover {
-    opacity: 0.7; /* Hover effect */
-}
-
-/* Style for individual social media links */
-#footer .social-media a[href*="linkedin.com"] {
-    color: #0077B5;
-}
-
-#footer .social-media a[href*="facebook.com"] {
-    color: #1877F2;
-}
-
-#footer .social-media a[href*="x.com"] {
-    color: #1DA1F2;
-}
-
-#footer .social-media a[href*="instagram.com"] {
-    color: #C13584;
-}
-
-#footer .social-media a[href*="tiktok.com"] {
-    color: #69C9D0;
-}
-
-#footer .social-media a[href*="indeed.com"] {
-    color: #F9A825;
-}
-
-/* No underline class for email links */
-.no-underline {
-    text-decoration: none;
-}
-
-/* Contact Section Styling */
-section#contact {
-    margin: 40px 0;
+header {
+    background-color: #007bff;
     padding: 20px;
     text-align: center;
 }
 
-section#contact h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-section#contact p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Modern Form Styling */
-.modern-form {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-    margin: 30px auto;
-    max-width: 700px;
-}
-
-.fields {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.input-container {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.input-container input,
-.input-container textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: #f9f9f9;
-}
-
-.input-container input:focus,
-.input-container textarea:focus {
-    border-color: #007bff;
-    background-color: white;
-    outline: none;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
+header h1 {
     color: white;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    width: 100%;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-input[type="submit"]:hover {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
     background-color: #0056b3;
+    border-radius: 5px;
 }
 
-/* Social Media Icons in Footer */
-#footer .social-media a {
-    color: #555;
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main p, main ul {
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-media a {
+    color: white;
     margin: 0 10px;
-    transition: color 0.3s ease;
     font-size: 24px;
+    transition: color 0.3s ease;
 }
 
-#footer .social-media a:hover {
+footer .social-media a:hover {
     color: #007bff;
 }
 
-#footer .fab.fa-linkedin:hover {
-    color: #0077b5;
+/* Make Social Icons Larger on Mobile */
+footer .social-media a {
+    font-size: 30px;
 }
 
-#footer .fab.fa-facebook:hover {
-    color: #4267B2;
-}
-
-#footer .fab.fa-twitter:hover {
-    color: #1DA1F2;
-}
-
-#footer .fab.fa-instagram:hover {
-    color: #E1306C;
-}
-
-#footer .fab.fa-tiktok:hover {
-    color: #010101;
-}
-
-#footer .fab.fa-indeed:hover {
-    color: #003A9B;
-}
-
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #nav {
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+    /* Responsive Navigation */
+    nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    #nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #nav ul li {
+    nav ul li {
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    /* Header Text Size Adjustment */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Adjust Padding and Layout for Main Content */
+    main {
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p, main ul {
+        font-size: 1rem;
+    }
+
+    /* Contact Form Adjustments */
+    .modern-form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    /* Footer Social Media Icons */
+    footer .social-media {
+        margin: 20px 0;
+    }
+
+    footer .social-media a {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header Text Size Adjustment for Small Screens */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Navigation Links Larger for Tapping */
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+
+    /* Main Content Font Size for Small Screens */
+    main h2 {
+        font-size: 1.3rem;
+    }
+
+    main p, main ul {
+        font-size: 0.95rem;
+    }
+
+    /* Contact Form Spacing and Padding */
+    .modern-form {
+        padding: 15px;
+    }
+
+    /* Footer Text Adjustment for Small Screens */
+    footer {
+        padding: 15px;
     }
 }
