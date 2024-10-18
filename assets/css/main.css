@@ -151,13 +151,13 @@ table tr:hover {
 
 .fields {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Add space between fields */
 }
 
 .input-container {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Ensure there's space below each field */
 }
 
 .input-container input,
@@ -213,6 +213,7 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
+    margin-top: 20px; /* Space above the submit button */
 }
 
 input[type="submit"]:hover {
