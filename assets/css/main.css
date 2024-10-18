@@ -125,13 +125,38 @@ main {
     text-decoration: none;
 }
 
-/* Contact Form Styling */
+/* Contact Section Styling */
+section#contact {
+    margin: 40px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+section#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section#contact p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Modern Form Styling */
 .modern-form {
     background-color: #fff;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .input-container {
@@ -139,25 +164,21 @@ main {
     margin-bottom: 20px;
 }
 
-.input-container label {
-    font-size: 14px;
-    color: #333;
-}
-
 .input-container input,
 .input-container textarea {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
     background: #f9f9f9;
 }
 
 .input-container input:focus,
 .input-container textarea:focus {
     border-color: #007bff;
+    background-color: white;
     outline: none;
 }
 
@@ -170,11 +191,49 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* Social Media Icons in Footer */
+#footer .social-media a {
+    color: #555;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-size: 24px;
+}
+
+#footer .social-media a:hover {
+    color: #007bff;
+}
+
+#footer .fab.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+#footer .fab.fa-facebook:hover {
+    color: #4267B2;
+}
+
+#footer .fab.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+#footer .fab.fa-instagram:hover {
+    color: #E1306C;
+}
+
+#footer .fab.fa-tiktok:hover {
+    color: #010101;
+}
+
+#footer .fab.fa-indeed:hover {
+    color: #003A9B;
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
