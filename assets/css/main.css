@@ -1,135 +1,139 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif; /* Set a clean font for the body */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    line-height: 1.6; /* Set line height for readability */
-    background-color: #ffffff; /* Set background color */
-    color: #333; /* Set text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #f4f4f4; /* Light background for header */
-    padding: 20px; /* Padding around header */
-    text-align: center; /* Center align text */
-    border-bottom: 2px solid #ddd; /* Bottom border for separation */
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
 }
 
 header h1 {
-    margin: 0; /* Remove margin from the header title */
+    margin: 0;
 }
 
 /* Navigation Bar Styles */
 nav {
-    margin: 20px 0; /* Space above and below the navbar */
+    margin: 20px 0;
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    text-align: center; /* Center the navbar items */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline; /* Display items in a line */
-    margin: 0 15px; /* Space between items */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
-    color: #007BFF; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make links bold */
-    transition: color 0.3s; /* Transition effect for hover */
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #0056b3; /* Darker color on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px; /* Padding around main content */
+    padding: 20px;
 }
 
 .contact-container {
-    display: flex; /* Flex layout for contact form */
-    justify-content: center; /* Center the form */
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Add padding around the container */
 }
 
 /* Contact Form Styles */
 .contact-form {
     max-width: 500px; /* Limit the width of the form */
-    margin: 20px auto; /* Center the form */
-    padding: 20px; /* Padding inside the form */
-    border: 1px solid #ddd; /* Border around the form */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #ffffff; /* White background for the form */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for a modern feel */
+    width: 100%; /* Ensure the form takes full width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
-    display: block; /* Block display for labels */
-    margin-bottom: 8px; /* Space below each label */
-    font-weight: 600; /* Make labels slightly bolder */
-    color: #555; /* Darker color for labels */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Full width for inputs and textarea */
-    padding: 12px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
-    border: 1px solid #ccc; /* Border for inputs */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Increase font size for readability */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effects */
+    width: calc(100% - 20px); /* Make inputs take full width minus padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007BFF; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect on focus */
-    outline: none; /* Remove outline */
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 .contact-form button {
-    background-color: #007BFF; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove border */
-    padding: 12px 20px; /* Padding for the button */
-    border-radius: 5px; /* Rounded corners for button */
-    cursor: pointer; /* Change cursor on hover */
-    font-size: 16px; /* Increase button font size */
-    transition: background-color 0.3s, transform 0.3s; /* Transition effect */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Make the button full width */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .contact-form button:active {
-    transform: translateY(0); /* Reset lift on click */
+    transform: translateY(0);
 }
 
 /* Footer Styles */
 footer {
-    text-align: center; /* Center align footer text */
-    padding: 10px; /* Padding around footer */
-    background-color: #f4f4f4; /* Light background for footer */
-    border-top: 2px solid #ddd; /* Top border for separation */
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ddd;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .contact-container {
-        flex-direction: column; /* Stack form on smaller screens */
+        flex-direction: column;
     }
-    
+
     .contact-form {
-        margin: 0; /* Remove margins for stacked layout */
-        max-width: 100%; /* Full width for the form */
+        margin: 0;
+        max-width: 100%;
     }
 }
