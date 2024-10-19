@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact - River Kritzar</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header id="header">
@@ -16,38 +14,48 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="contact-section">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out for any inquiries or collaborations!</p>
-
-            <form action="https://formspree.io/f/mkgnnlva" method="POST" class="modern-form">
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="section">
+            <h2>Contact Me</h2>
+            <form
+              action="https://formspree.io/f/mkgnnlva"
+              method="POST"
+            >
+              <label>
+                Your email:
+                <input type="email" name="email">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+              <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer id="footer">
         <p>&copy; 2024 River Kritzar. All rights reserved.</p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://x.com/KritzarRiver" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/riverkritzar" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@riverkritzar97" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://profile.indeed.com/" target="_blank"><i class="fab fa-indeed"></i></a>
+            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://x.com/KritzarRiver" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/riverkritzar" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
     </footer>
 </body>
