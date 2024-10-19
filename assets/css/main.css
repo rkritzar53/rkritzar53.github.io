@@ -93,7 +93,18 @@ footer {
     margin-top: 15px;
 }
 
-.job-dates {
-    font-style: italic;
-    margin-bottom: 10px;
+.job-location {
+    display: inline-block;
+    margin-right: 10px;
 }
+
+.job-dates {
+    display: inline-block;
+    font-style: italic;
+}
+
+/* Section-specific Styles */
+.education-entry, .job-entry {
+    margin-bottom: 25px;
+}
+
