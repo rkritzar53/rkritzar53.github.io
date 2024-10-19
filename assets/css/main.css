@@ -1,99 +1,121 @@
-/* General Styles */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Light mode background */
-    color: #333333; /* Light mode text color */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333333; /* Darker footer background */
-    border-top: 1px solid #444444; /* Slightly lighter border */
-    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Light/Dark Mode Styles */
-body.dark-mode {
-    background-color: #333333; /* Dark mode background */
-    color: #ffffff; /* Dark mode text color */
+.footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-.dark-mode footer {
-    background-color: #444444; /* Dark mode footer background */
-    border-top: 1px solid #555555; /* Dark mode footer border */
+#main {
+    padding: 20px;
 }
 
-/* Section Headers */
-h1, h2, h3, h4 {
-    color: inherit; /* Inherit color from body */
-    margin: 0 0 10px; /* Spacing below headers */
-}
-
-/* Resume Sections */
-.resume-section {
-    margin-bottom: 20px; /* Space between sections */
-}
-
-.social-icons {
-    margin-top: 10px; /* Space above the icons */
-}
-
-.social-icons a {
-    margin: 0 10px; /* Space between icons */
-    color: white; /* Change this to your preferred color */
-    font-size: 24px; /* Adjust icon size */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
-}
-
-.social-icons a:hover {
-    opacity: 0.7; /* Slight opacity change on hover */
-}
-
-
-/* Contact Form */
-.contact-form {
+/* Form styles */
+form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements */
-    margin: 0 auto;
-    max-width: 400px; /* Max width of the form */
 }
 
-.contact-form label {
-    margin-bottom: 5px; /* Space below labels */
-    align-self: flex-start; /* Align labels to the start */
+form label {
+    margin: 10px 0 5px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%; /* Full width of the form elements */
-    margin-bottom: 15px; /* Space between inputs */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.contact-form button {
-    padding: 10px 15px; /* Button padding */
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-.contact-form button:hover {
-    background-color: #0056b3; /* Darker button on hover */
+/* Light mode styles */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .contact-form {
-        width: 90%; /* Responsive form width */
+header.light-mode {
+    background: #4CAF50;
+}
+
+footer.light-mode {
+    background: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header.dark-mode {
+    background: #4a4a4a;
+}
+
+footer.dark-mode {
+    background: #444;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-icons a {
+        font-size: 20px;
     }
 }
-
-/* Add any additional styles below as needed */
