@@ -1,66 +1,101 @@
-/* General Body Styles */
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light mode background */
-    color: #333; /* Light mode text color */
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+    background-color: white; /* Default background color */
+    color: black; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333; /* Dark mode background */
-    color: #f4f4f4; /* Dark mode text color */
+header, footer {
+    background-color: #f1f1f1; /* Light header/footer background */
+    color: black; /* Light text color */
+    padding: 20px;
+    text-align: center;
 }
 
-/* General Container Styles */
+/* Container */
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Styles */
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f8f8f8; /* Light mode header */
-    border-bottom: 1px solid #ddd;
+/* Section Headers */
+h2, h3 {
+    margin: 20px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007BFF;
 }
 
-header.dark-mode {
-    background-color: #444; /* Dark mode header */
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f8f8f8; /* Light mode footer */
-    border-top: 1px solid #ddd;
+form label {
+    margin-bottom: 5px;
 }
 
-footer.dark-mode {
-    background-color: #444; /* Dark mode footer */
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth transition for border changes */
 }
 
-/* Other existing styles... */
+form input:focus, form textarea:focus {
+    border-color: #007BFF; /* Change border color on focus */
+}
 
-/* Button Styles */
-.toggle-button {
+form .submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for button background */
+}
+
+form .submit-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: white; /* Light text color */
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #444; /* Dark header/footer background */
+    color: white; /* Light text color */
+}
+
+.toggle-button {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    background-color: #007BFF;
     color: white;
-    font-size: 1em;
-    margin: 20px 0;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for button background */
 }
 
 .toggle-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    form {
+        flex-direction: column; /* Stack form inputs on smaller screens */
+    }
 }
