@@ -120,7 +120,7 @@ main {
 .contact-container {
     display: flex;
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .contact-form {
@@ -132,6 +132,7 @@ main {
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
 }
 
 .contact-form label {
@@ -143,13 +144,13 @@ main {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Full width */
+    width: 100%; /* Ensure input takes full width within the container */
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Include padding and border in width */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -183,15 +184,6 @@ main {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item {
-        width: 100%;
-    }
-
     .contact-container {
         flex-direction: column;
         padding: 10px;
