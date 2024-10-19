@@ -1,101 +1,141 @@
-/* Base Styles */
+/* Main Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: white; /* Default background color */
-    color: black; /* Default text color */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-header, footer {
-    background-color: #f1f1f1; /* Light header/footer background */
-    color: black; /* Light text color */
-    padding: 20px;
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
 }
 
-/* Container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
     padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.light-mode header, .light-mode footer {
+    background: #333;
+    color: #fff;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode header, .dark-mode footer {
+    background: #fff;
+    color: #333;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Social Media Links */
+.social-media {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* Change color as needed */
+    font-size: 1.2em;
+}
+
+.social-media a:hover {
+    color: #007BFF; /* Change hover color as needed */
 }
 
 /* Section Headers */
 h2, h3 {
-    margin: 20px 0 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #007BFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Contact Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s; /* Smooth transition for border changes */
-}
-
-form input:focus, form textarea:focus {
-    border-color: #007BFF; /* Change border color on focus */
-}
-
-form .submit-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for button background */
-}
-
-form .submit-button:hover {
-    background-color: #0056b3; /* Darker background on hover */
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333; /* Dark background color */
-    color: white; /* Light text color */
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background-color: #444; /* Dark header/footer background */
-    color: white; /* Light text color */
-}
-
-.toggle-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for button background */
-}
-
-.toggle-button:hover {
-    background-color: #0056b3; /* Darker background on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px; /* Reduce padding on smaller screens */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
     }
 
-    form {
-        flex-direction: column; /* Stack form inputs on smaller screens */
+    nav a {
+        margin: 10px 0;
+    }
+
+    .social-media a {
+        display: block;
+        margin: 5px 0;
     }
 }
