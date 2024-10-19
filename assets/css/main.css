@@ -1,182 +1,84 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding-bottom: 100px;
-}
-
-/* Header Styles */
-#header {
-    background-color: #0066ff;
-    color: white;
-    padding: 15px 0;
-}
-
-#header h1 {
     margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for better readability */
+}
+
+header {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-#nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1 {
+    color: #333;
+    font-size: 2.5em;
 }
 
-#nav ul li {
-    margin: 0 15px;
-}
-
-#nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content Styles */
-main {
-    padding: 30px 20px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.section h2 {
-    font-size: 24px;
-    color: #0066ff;
-    margin-bottom: 10px;
-}
-
-.section ul {
-    list-style: none;
-}
-
-.section ul li {
-    margin-bottom: 10px;
-}
-
-.section p {
+h2 {
+    color: #444;
+    border-bottom: 2px solid #ccc; /* Underline for section titles */
+    padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
-/* Skills Section */
-#skills ul li {
-    margin-bottom: 8px;
+/* Section Styles */
+.resume-section {
+    background: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+ul li ul {
+    padding-left: 20px; /* Indent sub-lists */
+}
+
+/* Link Styles */
+a {
+    color: #007BFF; /* Bootstrap blue */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Footer Styles */
-#footer {
-    background-color: #0066ff;
-    color: white;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
+footer {
     text-align: center;
-    bottom: 0;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 30px;
 }
 
-#footer p {
-    margin-bottom: 10px;
-}
-
-#footer .social-media a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
-#footer .social-media i {
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-#footer .social-media a:hover i {
-    color: #ddd;
-}
-
-/* Social Media Icons with Platform Colors */
-.fab.fa-linkedin { color: #0077b5; }
-.fab.fa-facebook { color: #3b5998; }
-.fab.fa-twitter { color: #1DA1F2; }
-.fab.fa-instagram { color: #C13584; }
-.fab.fa-tiktok { color: #010101; }
-.fab.fa-indeed { color: #003A9B; }
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    width: 100%;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #0066ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #0047b3;
-}
-
-/* Mobile Styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    #nav ul {
-        flex-direction: column;
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
     }
 
-    #nav ul li {
-        margin-bottom: 10px;
+    h1 {
+        font-size: 2em; /* Adjust header size */
     }
 
-    #nav ul li a {
-        font-size: 18px;
+    h2 {
+        font-size: 1.5em; /* Adjust section title size */
     }
 
-    main {
-        padding: 20px 10px;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+    .resume-section {
+        padding: 15px; /* Reduce padding in sections */
     }
 }
