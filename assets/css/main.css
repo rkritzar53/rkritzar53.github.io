@@ -20,16 +20,15 @@ header {
     padding: 20px 0;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 20px; /* Added margin to create space below the header */
 }
 
 header h1 {
     font-size: 2.2em;
-    margin: 0; /* Remove default margin to eliminate overlap */
+    margin-bottom: 5px;
 }
 
 nav {
-    margin-bottom: 10px; /* Adjust spacing between the header and navigation */
+    margin-bottom: 20px; /* Adds space between the header and content */
 }
 
 nav a {
@@ -59,7 +58,7 @@ footer {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .section-header {
@@ -67,12 +66,8 @@ footer {
     margin-bottom: 25px; /* Increases spacing below headers */
 }
 
-.education-entry,
-.job-entry,
-.skills-entry,
-.certifications-entry,
-.references-entry {
-    margin-bottom: 40px; /* Adds more space between sections */
+.education-entry, .job-entry {
+    margin-bottom: 40px; /* Adds more space between jobs and education */
 }
 
 .job-entry p {
@@ -85,14 +80,24 @@ ul.job-duties {
     list-style-type: disc;
 }
 
+/* Section Header Styles */
+h3 {
+    font-size: 1.5em; /* Adjust size for emphasis */
+    margin-bottom: 15px; /* Space below each header */
+    color: #333; /* Darker color for visibility */
+    border-bottom: 2px solid #007bff; /* Blue underline for a touch of style */
+    padding-bottom: 5px; /* Space between text and border */
+    text-transform: uppercase; /* Make the header text uppercase */
+}
+
 /* Contact Page Styles */
 .contact-container {
     max-width: 600px;
-    margin: 50px auto; /* Center the content and add spacing */
+    margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .contact-container form {
@@ -100,11 +105,7 @@ ul.job-duties {
     flex-direction: column;
 }
 
-.contact-container label {
-    margin-top: 10px; /* Space above labels */
-}
-
-.contact-container input,
+.contact-container input, 
 .contact-container textarea {
     padding: 10px;
     margin: 10px 0; /* Equal margins for all sides */
@@ -152,17 +153,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #218838;
-}
-
-/* Projects Page Styles */
-.project-entry {
-    margin-bottom: 40px; /* Space between project entries */
-}
-
-.project-entry h3 {
-    margin-bottom: 10px; /* Space below project titles */
-}
-
-.project-entry p {
-    margin: 0; /* Remove default margins for project descriptions */
 }
