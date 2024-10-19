@@ -53,25 +53,20 @@ main {
     padding: 20px; /* Padding around main content */
 }
 
-.resume-section {
-    margin-bottom: 20px; /* Space between sections */
-    border-bottom: 1px solid #ddd; /* Bottom border for separation */
-    padding-bottom: 10px; /* Padding below each section */
-}
-
-.resume-section h2 {
-    color: #007BFF; /* Blue color for section titles */
+.contact-container {
+    display: flex; /* Flex layout for contact form */
+    justify-content: center; /* Center the form */
 }
 
 /* Contact Form Styles */
 .contact-form {
-    max-width: 600px; /* Limit the width of the form */
+    max-width: 500px; /* Limit the width of the form */
     margin: 20px auto; /* Center the form */
     padding: 20px; /* Padding inside the form */
     border: 1px solid #ddd; /* Border around the form */
     border-radius: 8px; /* Rounded corners */
     background-color: #ffffff; /* White background for the form */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for a modern feel */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for a modern feel */
 }
 
 .contact-form label {
@@ -119,28 +114,22 @@ main {
     transform: translateY(0); /* Reset lift on click */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 15px; /* Reduced padding on smaller screens */
-    }
-}
-
 /* Footer Styles */
 footer {
     text-align: center; /* Center align footer text */
     padding: 10px; /* Padding around footer */
     background-color: #f4f4f4; /* Light background for footer */
-    position: relative; /* Positioning for sticky footer */
-    bottom: 0; /* Align to bottom */
-    width: 100%; /* Full width */
     border-top: 2px solid #ddd; /* Top border for separation */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block; /* Stack navbar items vertically on smaller screens */
-        margin: 10px 0; /* Space between items */
+    .contact-container {
+        flex-direction: column; /* Stack form on smaller screens */
+    }
+    
+    .contact-form {
+        margin: 0; /* Remove margins for stacked layout */
+        max-width: 100%; /* Full width for the form */
     }
 }
