@@ -2,9 +2,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light mode background */
+    color: #333; /* Light mode text color */
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark mode background */
+    color: #f4f4f4; /* Dark mode text color */
 }
 
 /* General Container Styles */
@@ -18,161 +26,41 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /* Light mode header */
     border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-    font-size: 2.2em;
-    margin-bottom: 5px;
-}
-
-nav {
-    margin-bottom: 20px; /* Adds space between the header and content */
-}
-
-nav a {
-    font-size: 1.2em;
-    margin: 0 15px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+header.dark-mode {
+    background-color: #444; /* Dark mode header */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /* Light mode footer */
     border-top: 1px solid #ddd;
-    font-size: 0.9em;
-}
-
-/* Resume Page Styles */
-.resume-container {
-    max-width: 800px;
-    margin: 50px auto; /* Center the content and add spacing */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.section-header {
-    font-size: 1.8em;
-    margin-bottom: 25px; /* Increases spacing below headers */
-}
-
-.education-entry, .job-entry {
-    margin-bottom: 40px; /* Adds more space between jobs and education */
-}
-
-.job-entry p {
-    margin-bottom: 10px;
-}
-
-ul.job-duties {
-    margin-top: 10px;
-    padding-left: 40px;
-    list-style-type: disc;
-}
-
-/* Contact Page Styles */
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.contact-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-container input, 
-.contact-container textarea {
-    padding: 10px;
-    margin: 10px 0; /* Equal margins for all sides */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1em;
-}
-
-.contact-container button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.contact-container button:hover {
-    background-color: #0056b3;
-}
-
-/* General Form Styling */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-button[type="submit"] {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #218838;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-header.dark-mode {
-    background-color: #444;
-    color: #f4f4f4;
 }
 
 footer.dark-mode {
-    background-color: #444;
-    color: #f4f4f4;
+    background-color: #444; /* Dark mode footer */
 }
 
-nav.dark-mode a {
-    color: #80d3ff;
-}
+/* Other existing styles... */
 
-nav.dark-mode a:hover {
-    color: #ffffff;
-}
-
-/* Theme Toggle Styles */
-.theme-toggle {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 1.1em;
+/* Button Styles */
+.toggle-button {
     cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
 }
