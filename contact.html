@@ -3,51 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | River Kritzar</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.js"> <!-- Add Font Awesome CDN -->
-    <link rel="icon" href="path/to/your/favicon.ico"> <!-- Add your favicon path -->
+    <link rel="icon" href="path/to/your/favicon.ico"> <!-- Update with your favicon path -->
+    <title>Contact | River Kritzar</title>
 </head>
 <body>
     <header>
-    <h1>River Kritzar</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-    <label for="theme-toggle" class="theme-toggle">
-        <input type="checkbox" id="theme-toggle">
-        <span>Toggle Dark Mode</span>
-    </label>
-</header>
+        <h1>River Kritzar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+    
+    <button class="toggle-button">Toggle Dark Mode</button>
 
-    <div class="container contact-container">
+    <div class="container">
         <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
+        <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-
             <button type="submit">Submit</button>
         </form>
     </div>
 
     <footer>
-        <p>&copy; 2024 River Kritzar. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="https://www.tiktok.com/@riverkritzar97" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
-            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com/riverkritzar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-messaging--messaging-webapp/" target="_blank" rel="noopener noreferrer"><i class="fab fa-indeed"></i> Indeed</a>
-        </div>
+        <p>&copy; 2024 River Kritzar</p>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
