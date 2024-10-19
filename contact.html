@@ -3,60 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - River Kritzar</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Link to your main CSS -->
+    <title>River Kritzara - Contact</title>
 </head>
 <body>
-    <header id="header">
-        <nav id="nav">
-            <h1>River Kritzar</h1>
+
+    <header>
+        <h1>River Kritzar</h1>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <p>Email: <a href="mailto:rkritzar53@gmail.com">rkritzar53@gmail.com</a></p>
+        <p>Phone: (567) 365-0113</p>
     </header>
 
     <main>
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="section">
-            <h2>Contact Me</h2>
-            <form
-              action="https://formspree.io/f/mkgnnlva"
-              method="POST"
-            >
-              <label>
-                Your email:
-                <input type="email" name="email">
-              </label>
-              <label>
-                Your message:
-                <textarea name="message"></textarea>
-              </label>
-              <button type="submit">Send</button>
-            </form>
-        </section>
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Please fill out the form below, and I'll get back to you as soon as possible.</p>
+        
+        <form class="contact-form" action="https://formspree.io/f/mkgnnlva" method="POST"> <!-- Update YOUR_FORM_ID -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer">
+    <footer>
         <p>&copy; 2024 River Kritzar. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/river.kritzar.18/" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://x.com/KritzarRiver" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/riverkritzar" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
     </footer>
+
 </body>
 </html>
