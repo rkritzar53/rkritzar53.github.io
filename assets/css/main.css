@@ -12,7 +12,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 80px; /* Added margin to push content down below the header */
 }
 
 /* Header Styles */
@@ -21,15 +20,16 @@ header {
     padding: 20px 0;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 20px; /* Added margin to create space below the header */
 }
 
 header h1 {
     font-size: 2.2em;
-    margin-bottom: 5px;
+    margin: 0; /* Remove default margin to eliminate overlap */
 }
 
 nav {
-    margin-bottom: 20px; /* Adds space between the header and content */
+    margin-bottom: 10px; /* Adjust spacing between the header and navigation */
 }
 
 nav a {
@@ -101,7 +101,7 @@ ul.job-duties {
 }
 
 .contact-container label {
-    margin-top: 10px;
+    margin-top: 10px; /* Space above labels */
 }
 
 .contact-container input,
