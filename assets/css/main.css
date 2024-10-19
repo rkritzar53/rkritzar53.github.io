@@ -1,110 +1,146 @@
-/* General Page Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 0;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #007BFF;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+/* General Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header Styles */
 header {
-    background-color: #f1f1f1;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 32px;
+    font-size: 2.2em;
+    margin-bottom: 5px;
 }
 
 nav {
-    margin-top: 10px;
+    margin-bottom: 20px; /* Adds space between the header and content */
 }
 
 nav a {
+    font-size: 1.2em;
     margin: 0 15px;
-    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
 }
 
-.contact-info p {
-    margin: 5px 0;
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
+    padding: 20px 0;
+    background-color: #f8f8f8;
     border-top: 1px solid #ddd;
+    font-size: 0.9em;
 }
 
 /* Resume Page Styles */
-.resume-page {
-    padding: 20px;
+.resume-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 50px auto; /* Center the content and add spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.resume-section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+.section-header {
+    font-size: 1.8em;
+    margin-bottom: 25px; /* Increases spacing below headers */
 }
 
-.resume-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+.education-entry, .job-entry {
+    margin-bottom: 40px; /* Adds more space between jobs and education */
 }
 
-.resume-section h3 {
-    font-size: 20px;
+.job-entry p {
     margin-bottom: 10px;
 }
 
-.resume-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
+ul.job-duties {
     margin-top: 10px;
+    padding-left: 40px;
+    list-style-type: disc;
 }
 
-.resume-section ul li {
-    margin-bottom: 8px;
+/* Contact Page Styles */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.job-title {
-    font-weight: bold;
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container input, 
+.contact-container textarea {
+    padding: 10px;
+    margin: 10px 0; /* Equal margins for all sides */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.contact-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin-top: 15px;
 }
 
-.job-location {
-    display: inline-block;
-    margin-right: 10px;
+.contact-container button:hover {
+    background-color: #0056b3;
 }
 
-.job-dates {
-    display: inline-block;
-    font-style: italic;
+/* General Form Styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-/* Section-specific Styles */
-.education-entry, .job-entry {
-    margin-bottom: 25px;
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+button[type="submit"]:hover {
+    background-color: #218838;
+}
