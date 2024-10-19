@@ -116,6 +116,12 @@ h3 {
     margin: 0 auto; /* Center the inputs */
 }
 
+.contact-container input[type="text"],
+.contact-container input[type="email"] {
+    /* Additional margin for centering */
+    margin: 0 auto; /* Center the input fields */
+}
+
 .contact-container button {
     padding: 10px 15px;
     background-color: #007bff;
