@@ -11,8 +11,8 @@ body {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
+    background-color: #333333; /* Darker footer background */
+    border-top: 1px solid #444444; /* Slightly lighter border */
     font-size: 0.9em;
 }
 
@@ -53,6 +53,11 @@ h1, h2, h3, h4 {
     vertical-align: middle; /* Align icons with text */
     display: inline-block; /* Ensure they are displayed inline */
     visibility: visible; /* Ensure they are visible */
+}
+
+/* Make icons white for better contrast */
+.social-icons img {
+    filter: brightness(0) invert(1); /* Change icon color to white */
 }
 
 .social-icons a:hover img {
