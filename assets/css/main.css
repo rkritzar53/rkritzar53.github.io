@@ -112,8 +112,8 @@ h3 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.1em;
-    width: calc(100% - 20px); /* Full width minus right margin */
-    margin-right: 20px; /* Add right margin */
+    width: calc(100% - 40px); /* Full width minus left/right margins */
+    margin: 0 auto; /* Center the inputs */
 }
 
 .contact-container button {
@@ -125,8 +125,8 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px; /* Space above the button */
-    width: calc(100% - 20px); /* Full width minus right margin */
-    margin-right: 20px; /* Add right margin */
+    width: calc(100% - 40px); /* Full width minus left/right margins */
+    margin: 0 auto; /* Center the button */
 }
 
 .contact-container button:hover {
