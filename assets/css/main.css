@@ -1,84 +1,83 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light background for better readability */
+    font-family: Arial, sans-serif; /* Set a clean font for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.6; /* Set line height for readability */
+    background-color: #ffffff; /* Set background color */
+    color: #333; /* Set text color */
 }
 
+/* Header Styles */
 header {
-    text-align: center;
-    margin-bottom: 30px;
+    background-color: #f4f4f4; /* Light background for header */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center align text */
+    border-bottom: 2px solid #ddd; /* Bottom border for separation */
 }
 
-h1 {
-    color: #333;
-    font-size: 2.5em;
+header h1 {
+    margin: 0; /* Remove margin from the header title */
 }
 
-h2 {
-    color: #444;
-    border-bottom: 2px solid #ccc; /* Underline for section titles */
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+/* Navigation Bar Styles */
+nav {
+    margin: 20px 0; /* Space above and below the navbar */
 }
 
-/* Section Styles */
-.resume-section {
-    background: white; /* White background for sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-ul {
+nav ul {
     list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Remove padding */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center the navbar items */
 }
 
-ul li {
-    margin-bottom: 10px; /* Space between list items */
+nav ul li {
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Space between items */
 }
 
-ul li ul {
-    padding-left: 20px; /* Indent sub-lists */
-}
-
-/* Link Styles */
-a {
-    color: #007BFF; /* Bootstrap blue */
+nav a {
+    color: #007BFF; /* Link color */
     text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Transition effect for hover */
 }
 
-a:hover {
+nav a:hover {
+    color: #0056b3; /* Darker color on hover */
     text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px; /* Padding around main content */
+}
+
+.resume-section {
+    margin-bottom: 20px; /* Space between sections */
+    border-bottom: 1px solid #ddd; /* Bottom border for separation */
+    padding-bottom: 10px; /* Padding below each section */
+}
+
+.resume-section h2 {
+    color: #007BFF; /* Blue color for section titles */
 }
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 30px;
+    text-align: center; /* Center align footer text */
+    padding: 10px; /* Padding around footer */
+    background-color: #f4f4f4; /* Light background for footer */
+    position: relative; /* Positioning for sticky footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    border-top: 2px solid #ddd; /* Top border for separation */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    body {
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
-
-    h1 {
-        font-size: 2em; /* Adjust header size */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Adjust section title size */
-    }
-
-    .resume-section {
-        padding: 15px; /* Reduce padding in sections */
+    nav ul li {
+        display: block; /* Stack navbar items vertically on smaller screens */
+        margin: 10px 0; /* Space between items */
     }
 }
