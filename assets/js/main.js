@@ -203,8 +203,15 @@
 		});
 	}
 
-	// Light/Dark Mode Toggle
-	const themeToggle = document.querySelector('.theme-toggle');
+	// Light and Dark Mode Toggle
+const toggleButton = document.createElement('button');
+toggleButton.innerText = 'Toggle Dark Mode';
+toggleButton.classList.add('toggle-button');
+document.body.insertBefore(toggleButton, document.body.firstChild); // Add the button to the top of the body
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode'); // Toggle the class on the body
+});
 
 	// Check for saved user preference in local storage
 	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
