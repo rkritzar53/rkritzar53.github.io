@@ -203,19 +203,33 @@
 		});
 	}
 
-	// Dark Mode Toggle
+	// Get the toggle button and body element
 const toggleButton = document.querySelector('.toggle-button');
+const body = document.body;
 
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    
-    // Optionally change the button text based on mode
-    if (document.body.classList.contains('dark-mode')) {
-        toggleButton.textContent = 'Switch to Light Mode';
+// Function to toggle dark mode
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+
+    // Save the current mode to local storage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
     } else {
-        toggleButton.textContent = 'Switch to Dark Mode';
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Event listener for the toggle button
+toggleButton.addEventListener('click', toggleDarkMode);
+
+// Check for saved user preference on page load
+window.addEventListener('load', () => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
     }
 });
+
 
 
 	// Check for saved user preference in local storage
