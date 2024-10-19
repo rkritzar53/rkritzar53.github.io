@@ -36,6 +36,7 @@ nav a {
     margin: 0 15px;
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color */
 }
 
 nav a:hover {
@@ -58,7 +59,7 @@ footer {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section-header {
@@ -66,7 +67,8 @@ footer {
     margin-bottom: 25px; /* Increases spacing below headers */
 }
 
-.education-entry, .job-entry {
+.education-entry,
+.job-entry {
     margin-bottom: 40px; /* Adds more space between jobs and education */
 }
 
@@ -87,7 +89,7 @@ ul.job-duties {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-container form {
@@ -95,13 +97,20 @@ ul.job-duties {
     flex-direction: column;
 }
 
-.contact-container input, 
+.contact-container input,
 .contact-container textarea {
     padding: 10px;
     margin: 10px 0; /* Equal margins for all sides */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.1em;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
 }
 
 .contact-container button {
@@ -113,10 +122,15 @@ ul.job-duties {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .contact-container button:hover {
     background-color: #0056b3;
+}
+
+.contact-container button:focus {
+    outline: 2px solid #0056b3; /* Outline on focus for accessibility */
 }
 
 /* General Form Styling */
@@ -131,6 +145,7 @@ textarea {
     border: 1px solid #ddd;
 }
 
+/* Submit Button Styles */
 button[type="submit"] {
     background-color: #28a745;
     color: white;
@@ -139,8 +154,25 @@ button[type="submit"] {
     font-size: 1.1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 button[type="submit"]:hover {
     background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1em; /* Smaller font for mobile */
+        margin: 0 10px; /* Less margin for mobile */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Smaller heading on mobile */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on mobile */
+    }
 }
