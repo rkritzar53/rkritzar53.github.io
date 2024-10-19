@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css"> <!-- Link to your main CSS -->
-    <title>River Kritzar - Contact</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>River Kritzar - Contact Me</title>
 </head>
 <body>
-
- <!-- Header Section -->
-<header>
-    <h1>River Kritzar</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-</header>
-        <p>Email: <a href="mailto:[Your Email]">rkritzar53@gmail.com</a></p>
-        <p>Phone: (567) 365-0113</p>
+    <header>
+        <h1>River Kritzar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </nav>
     </header>
 
-    <main>
-        <h2>Contact Me</h2>
-        <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
-        
-        <div class="contact-container">
-            <form class="contact-form" action="https://formspree.io/f/mkgnnlva" method="POST"> <!-- Formspree Endpoint -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="container contact-container">
+        <h2 class="section-header">Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </main>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
     <footer>
         <p>&copy; 2024 River Kritzar. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
