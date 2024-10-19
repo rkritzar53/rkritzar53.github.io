@@ -153,3 +153,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #218838;
 }
+
+/* Projects Page Styles */
+.project-entry {
+    margin-bottom: 40px; /* Space between project entries */
+}
+
+.project-entry h3 {
+    margin-bottom: 10px; /* Space below project titles */
+}
+
+.project-entry p {
+    margin: 0; /* Remove default margins for project descriptions */
+}
