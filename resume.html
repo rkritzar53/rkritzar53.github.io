@@ -3,82 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css"> <!-- Link to your main CSS -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>River Kritzar - Resume</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <header>
         <h1>River Kritzar</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
-        <p>Email: <a href="mailto:rkritzar53@gmail.com">rkritzar53@gmail.com</a></p>
-        <p>Phone: (567) 365-0113</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:rkritzar53@gmail.com">rkritzar53@gmail.com</a></p>
+            <p>Phone: (567) 365-0113</p>
+        </div>
     </header>
 
-    <main>
-        <section class="resume-section" id="summary">
-            <h2>Summary</h2>
-            <p>Certified computer technician with a passion for both software and hardware repair. Proficient in troubleshooting Apple, Windows, and Mac operating systems. Recognized for delivering exceptional customer service and fostering strong relationships with colleagues to enhance productivity.</p>
-        </section>
-
-        <section class="resume-section" id="education">
+    <!-- Resume Content -->
+    <div class="resume-page">
+        <div class="resume-section">
             <h2>Education</h2>
-            <ul>
-                <li><strong>High School Diploma</strong>, Elmwood High School, Bloomdale, OH — June 2024</li>
-                <li><strong>Information Technology Academy</strong>, Penta Career Center, Perrysburg, OH — May 2024</li>
-            </ul>
-        </section>
+            <h3>High School Diploma, Elmwood High School, Bloomdale, OH — June 2024</h3>
+            <h3>Information Technology Academy, Penta Career Center, Perrysburg, OH — May 2024</h3>
+        </div>
 
-        <section class="resume-section" id="work-experience">
+        <div class="resume-section">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Kitchen Team Member</strong>, Fricker's, Bowling Green, OH — October 2024 - Present
-                    <ul>
-                        <li>Prepare food and ingredients.</li>
-                        <li>Clean and sanitize kitchen areas at closing.</li>
-                    </ul>
-                </li>
-                <li><strong>Kitchen Crew</strong>, Whistle Stop Cafe, North Baltimore, OH — December 2023 - March 2024
-                    <ul>
-                        <li>Prepared pizzas based on customer orders.</li>
-                        <li>Modified recipes to accommodate special requests.</li>
-                    </ul>
-                </li>
-                <li><strong>Crew Member</strong>, Culver's, Bowling Green, OH — March 2023 - July 2023
-                    <ul>
-                        <li>Provided excellent customer service and managed POS transactions.</li>
-                        <li>Prepared sandwiches according to customer requests and food safety standards.</li>
-                    </ul>
-                </li>
-                <li><strong>Crew Member</strong>, Taco Bell, Bowling Green, OH — June 2022 - April 2023
-                    <ul>
-                        <li>Handled drive-thru orders and provided customer service.</li>
-                        <li>Ensured accuracy of orders and delivered food promptly.</li>
-                    </ul>
-                </li>
-                <li><strong>Kitchen Team Member</strong>, Pagliai's Pizza, Bowling Green, OH — April 2022 - June 2022
-                    <ul>
-                        <li>Prepared pizzas and adjusted recipes for customer requests.</li>
-                        <li>Maintained cleanliness and adhered to food safety protocols.</li>
-                    </ul>
-                </li>
-                <li><strong>Crew Member</strong>, McDonald's, Bowling Green, OH — July 2021 - December 2021
-                    <ul>
-                        <li>Operated the drive-thru, managed orders, and greeted customers.</li>
-                        <li>Ensured accurate and efficient food delivery.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
 
-        <section class="resume-section" id="skills">
+            <h3 class="job-title">Kitchen Team Member, Fricker's, Bowling Green, OH</h3>
+            <span class="job-dates">October 2024 - Present</span>
+            <ul>
+                <li>Cooking food and preparing ingredients</li>
+                <li>Cleaning and sanitizing kitchen areas for closing</li>
+            </ul>
+
+            <h3 class="job-title">Kitchen Crew, Whistle Stop Cafe, North Baltimore, OH</h3>
+            <span class="job-dates">December 2023 - March 2024</span>
+            <ul>
+                <li>Prepared pizzas based on customer orders and specifications</li>
+                <li>Modified recipes to accommodate special customer requests</li>
+            </ul>
+
+            <h3 class="job-title">Crew Member, Culver's, Bowling Green, OH</h3>
+            <span class="job-dates">March 2023 - July 2023</span>
+            <ul>
+                <li>Provided excellent customer service and managed POS transactions</li>
+                <li>Prepared sandwiches according to customer requests and food safety standards</li>
+            </ul>
+
+            <h3 class="job-title">Crew Member, Taco Bell, Bowling Green, OH</h3>
+            <span class="job-dates">June 2022 - April 2023</span>
+            <ul>
+                <li>Handled drive-thru orders and provided customer service</li>
+                <li>Ensured accuracy of orders and delivered food promptly</li>
+            </ul>
+
+            <h3 class="job-title">Kitchen Team Member, Pagliai's Pizza, Bowling Green, OH</h3>
+            <span class="job-dates">April 2022 - June 2022</span>
+            <ul>
+                <li>Prepared pizzas and adjusted recipes for customer requests</li>
+                <li>Maintained cleanliness in the kitchen and followed food safety protocols</li>
+            </ul>
+
+            <h3 class="job-title">Crew Member, McDonald's, Bowling Green, OH</h3>
+            <span class="job-dates">July 2021 - December 2021</span>
+            <ul>
+                <li>Operated the drive-thru, managed orders, and greeted customers warmly</li>
+                <li>Ensured food was delivered accurately and efficiently</li>
+            </ul>
+        </div>
+
+        <div class="resume-section">
             <h2>Skills</h2>
             <ul>
                 <li>Customer Service</li>
@@ -90,9 +90,9 @@
                 <li>Professional Cleaning</li>
                 <li>Time Management</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="resume-section" id="certifications">
+        <div class="resume-section">
             <h2>Certifications</h2>
             <ul>
                 <li>TestOut PC Pro - May 2024</li>
@@ -100,25 +100,20 @@
                 <li>Computer Maintenance & PC Building - May 2024</li>
                 <li>N4 Cybersecurity (85 MD) - May 2024</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="resume-section" id="references">
+        <div class="resume-section">
             <h2>References</h2>
             <ul>
-                <li><strong>Maria Tracy</strong>, Job Coach, Harbor Behavioral<br>
-                    Email: <a href="mailto:mtracy@harbor.org">mtracy@harbor.org</a><br>
-                    Phone: (419) 690-2649
-                </li>
-                <li><strong>Dan Wyandt</strong>, Teacher, Penta Career Center<br>
-                    Email: <a href="mailto:dwyandt@pentacareercenter.org">dwyandt@pentacareercenter.org</a><br>
-                    Phone: (419) 666-1120 Ext: 2118
-                </li>
+                <li>Maria Tracy, Job Coach, Harbor Behavioral — <a href="mailto:mtracy@harbor.org">mtracy@harbor.org</a> — (419) 690-2649</li>
+                <li>Dan Wyandt, Teacher, Penta Career Center — <a href="mailto:dwyandt@pentacareercenter.org">dwyandt@pentacareercenter.org</a> — (419) 666-1120 Ext: 2118</li>
             </ul>
-        </section>
-    </main>
+        </div>
+    </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 River Kritzar. All rights reserved.</p>
+        <p>© 2024 River Kritzar. All rights reserved.</p>
     </footer>
 
 </body>
