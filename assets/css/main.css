@@ -38,31 +38,21 @@ h1, h2, h3, h4 {
     margin-bottom: 20px; /* Space between sections */
 }
 
-/* Social Media Icons */
 .social-icons {
     margin-top: 10px; /* Space above the icons */
 }
 
 .social-icons a {
     margin: 0 10px; /* Space between icons */
+    color: white; /* Change this to your preferred color */
+    font-size: 24px; /* Adjust icon size */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
 }
 
-.social-icons img {
-    width: 30px; /* Adjust size of icons */
-    height: 30px; /* Ensure height is set to avoid hidden */
-    vertical-align: middle; /* Align icons with text */
-    display: inline-block; /* Ensure they are displayed inline */
-    visibility: visible; /* Ensure they are visible */
-}
-
-/* Make icons white for better contrast */
-.social-icons img {
-    filter: brightness(0) invert(1); /* Change icon color to white */
-}
-
-.social-icons a:hover img {
+.social-icons a:hover {
     opacity: 0.7; /* Slight opacity change on hover */
 }
+
 
 /* Contact Form */
 .contact-form {
