@@ -1,121 +1,175 @@
-/* Base styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    transition: background-color 0.5s, color 0.5s;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-#main {
+/* General Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Form styles */
-form {
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-bottom: 20px; /* Adds space between the header and content */
+}
+
+nav a {
+    font-size: 1.2em;
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+/* Merchandise Store Styles */
+.store-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-form label {
-    margin: 10px 0 5px;
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.2s;
 }
 
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.product-card:hover {
+    transform: scale(1.05);
 }
 
-form button {
-    background-color: #4CAF50;
+.product-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.product-info .price {
+    font-size: 1.3em;
+    color: #28a745;
+}
+
+.add-to-cart {
+    background-color: #007bff;
     color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-/* Light mode styles */
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Header Account Icon */
+.account-icon {
+    font-size: 1.2em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* General Form Styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Light/Dark Mode Styles */
 body.light-mode {
     background-color: #f4f4f4;
     color: #333;
 }
 
-header.light-mode {
-    background: #4CAF50;
-}
-
-footer.light-mode {
-    background: #333;
-}
-
-/* Dark mode styles */
 body.dark-mode {
     background-color: #333;
     color: #f4f4f4;
 }
 
-header.dark-mode {
-    background: #4a4a4a;
-}
-
-footer.dark-mode {
-    background: #444;
-}
-
-/* Button styles */
-button {
+button.toggle-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    z-index: 1000;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .footer-icons a {
-        font-size: 20px;
-    }
+button.toggle-mode:hover {
+    background-color: #0056b3;
 }
