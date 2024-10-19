@@ -12,6 +12,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 80px; /* Added margin to push content down below the header */
 }
 
 /* Header Styles */
@@ -20,15 +21,6 @@ header {
     padding: 20px 0;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Make the header fixed */
-    top: 0; /* Align it to the top */
-    left: 0; /* Align it to the left */
-    right: 0; /* Align it to the right */
-    z-index: 1000; /* Ensure it sits above other content */
-}
-
-.container {
-    padding-top: 100px; /* Add top padding to prevent content overlap with the fixed header */
 }
 
 header h1 {
@@ -45,7 +37,6 @@ nav a {
     margin: 0 15px;
     color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for link color */
 }
 
 nav a:hover {
@@ -68,7 +59,7 @@ footer {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section-header {
@@ -78,44 +69,48 @@ footer {
 
 .education-entry,
 .job-entry,
-.skills-entry {
-    margin-bottom: 40px; /* Adds space between sections */
+.skills-entry,
+.certifications-entry,
+.references-entry {
+    margin-bottom: 40px; /* Adds more space between sections */
 }
 
-h3 {
-    font-size: 1.5em; /* Increase size for section headers */
+.job-entry p {
     margin-bottom: 10px;
+}
+
+ul.job-duties {
+    margin-top: 10px;
+    padding-left: 40px;
+    list-style-type: disc;
 }
 
 /* Contact Page Styles */
 .contact-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 50px auto; /* Center the content and add spacing */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-container label {
-    font-size: 1.1em; /* Increase font size for labels */
     margin-top: 10px;
 }
 
 .contact-container input,
 .contact-container textarea {
-    width: 100%;
     padding: 10px;
     margin: 10px 0; /* Equal margins for all sides */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.1em;
-}
-
-.contact-container input:focus,
-.contact-container textarea:focus {
-    border-color: #007bff; /* Change border color on focus */
-    outline: none; /* Remove default outline */
 }
 
 .contact-container button {
@@ -127,7 +122,6 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .contact-container button:hover {
