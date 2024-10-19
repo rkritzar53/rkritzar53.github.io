@@ -80,16 +80,6 @@ ul.job-duties {
     list-style-type: disc;
 }
 
-/* Section Header Styles */
-h3 {
-    font-size: 1.5em; /* Adjust size for emphasis */
-    margin-bottom: 15px; /* Space below each header */
-    color: #333; /* Darker color for visibility */
-    border-bottom: 2px solid #007bff; /* Blue underline for a touch of style */
-    padding-bottom: 5px; /* Space between text and border */
-    text-transform: uppercase; /* Make the header text uppercase */
-}
-
 /* Contact Page Styles */
 .contact-container {
     max-width: 600px;
@@ -108,18 +98,10 @@ h3 {
 .contact-container input, 
 .contact-container textarea {
     padding: 10px;
-    margin-bottom: 15px; /* Space between inputs and the submit button */
+    margin: 10px 0; /* Equal margins for all sides */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.1em;
-    width: calc(100% - 40px); /* Full width minus left/right margins */
-    margin: 0 auto; /* Center the inputs */
-}
-
-.contact-container input[type="text"],
-.contact-container input[type="email"] {
-    /* Additional margin for centering */
-    margin: 0 auto; /* Center the input fields */
 }
 
 .contact-container button {
@@ -130,9 +112,7 @@ h3 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px; /* Space above the button */
-    width: calc(100% - 40px); /* Full width minus left/right margins */
-    margin: 0 auto; /* Center the button */
+    margin-top: 15px;
 }
 
 .contact-container button:hover {
@@ -163,4 +143,36 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #218838;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header.dark-mode {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+footer.dark-mode {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+nav.dark-mode a {
+    color: #80d3ff;
+}
+
+nav.dark-mode a:hover {
+    color: #ffffff;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
 }
