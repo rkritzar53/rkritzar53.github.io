@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact-Resistant Cases</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/product.js" defer></script>
+</head>
+<body>
+    <div class="product-page">
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <img id="main-product-image" src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p74_i1_w1200.jpeg?width=2400&optimize=medium" alt="Magnetic Tough Cases">
+            <div class="thumbnail-images">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i2_w1200.jpeg?width=2400&optimize=medium" onclick="changeMainImage(this.src)">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i1_w1200.jpeg?width=2400&optimize=medium">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i3_w1200.jpeg?width=2400&optimize=medium">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i4_w1200.jpeg?width=2400&optimize=medium">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i5_w1200.jpeg?width=2400&optimize=medium">
+                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i3_w1200.jpeg?width=2400&optimize=medium">
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h1>Magnetic Tough Cases</h1>
+            <p class="price">$21.07 <span>Excl. Tax</span></p>
+
+            <!-- Size Options (Phone Models) -->
+            <div class="product-options">
+                <label for="phone-model">Phone Model:</label>
+                <div class="phone-size-options">
+                    <button type="button">iPhone 11</button>
+                    <button type="button">iPhone 11 Pro</button>
+                    <button type="button">iPhone 11 Pro Max</button>
+                    <button type="button">Samsung Galaxy S22</button>
+                    <button type="button">Samsung Galaxy S22 Plus</button>
+                    <button type="button">Samsung Galaxy S22 Ultra</button>
+                    <button type="button">Samsung Galaxy S21</button>
+                    <button type="button">Samsung Galaxy S21 Plus</button>
+                    <button type="button">Samsung Galaxy S21 Ultra</button>
+                    <button type="button">iPhone 16</button>
+                    <button type="button">iPhone 16 Pro</button>
+                    <button type="button">iPhone 16 Plus</button>
+                    <button type="button">iPhone 16 Pro Max</button>
+                    <!-- Add more phone models as needed -->
+                </div>
+            </div>
+
+            <!-- Surface Options -->
+            <div class="product-options">
+                <label for="surface">Surface Finish:</label>
+                <div class="surface-options">
+                    <button type="button">Glossy</button>
+                    <button type="button">Matte</button>
+                </div>
+            </div>
+
+            <!-- Quantity Selector -->
+            <div class="quantity-section">
+                <div class="quantity-control">
+                    <button id="decrease-quantity">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button id="increase-quantity">+</button>
+                </div>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+
+            <a href="#" class="size-guide">View Size Guide</a>
+            <p class="return-policy">30 days return policy. See details.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Store Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
