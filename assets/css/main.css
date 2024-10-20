@@ -49,7 +49,7 @@ nav a:hover {
     padding: 10px;
     margin: 10px; /* Margin between product items */
     text-align: center; /* Center text */
-    width: 200px; /* Set a fixed width */
+    width: 150px; /* Set a fixed width for product items */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
     transition: transform 0.3s; /* Smooth transform */
 }
@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .product-image {
-    max-width: 100%; /* Ensure image fits within the item */
+    max-width: 80%; /* Adjust the image width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Rounded corners for images */
 }
