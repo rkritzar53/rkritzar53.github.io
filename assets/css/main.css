@@ -2,61 +2,52 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6; /* Improve readability */
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px; /* More space below the header */
+    margin-bottom: 20px;
+    padding: 20px 0; /* Added padding for spacing */
+    background-color: #007bff; /* Added background color for visual separation */
+    color: white; /* Changed text color for contrast */
+    border-radius: 8px; /* Rounded corners */
 }
 
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0; /* Added padding for spacing */
+    background-color: #007bff; /* Consistent background with header */
+    color: white; /* Changed text color for contrast */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Product Details Styles */
 .product-details {
-    display: flex; /* Use flexbox for layout */
-    align-items: flex-start; /* Align items to the start */
+    display: flex;
+    flex-direction: row; /* Changed to row for better layout */
+    align-items: center; /* Centered vertically */
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Set a max width for better layout */
-    margin: auto; /* Center the product details */
 }
 
 .product-image {
-    width: 150px; /* Set a smaller width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    margin-right: 20px; /* Space between image and product info */
+    max-width: 200px; /* Adjusted image size */
+    margin-right: 20px; /* Spacing between image and info */
 }
 
 .product-info {
-    text-align: left; /* Align text to the left for product info */
-    flex: 1; /* Allow product info to take available space */
+    margin-top: 0; /* Removed top margin for better alignment */
 }
 
-label {
-    display: block; /* Label takes full width */
-    margin-bottom: 5px;
-    font-weight: bold; /* Make label bold */
-}
-
-select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px; /* Space below select for clarity */
-    width: 100%; /* Full width for select dropdown */
-}
-
-#price {
-    font-size: 1.5em; /* Larger font size for price */
-    margin: 15px 0; /* Spacing around price */
-}
-
+/* Button Styles */
 button {
-    margin-top: 15px; /* Increase space above button */
+    margin-top: 10px;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -64,7 +55,6 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%; /* Full width for button */
 }
 
 button:hover {
@@ -82,14 +72,8 @@ body.dark-mode .product-details {
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Additional Styles for Improved Readability */
-h1 {
-    font-size: 2em; /* Larger font for the main header */
-    margin: 0 0 20px; /* Adjust spacing around header */
+/* Additional styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
-
-p {
-    margin-bottom: 15px; /* Space between paragraphs */
-}
-
-/* Add any additional styles as needed */
