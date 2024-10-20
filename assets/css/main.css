@@ -59,8 +59,8 @@ nav a:hover {
 }
 
 .product-image {
-    width: 150px; /* Set width to 150px */
-    height: 150px; /* Set height to 150px */
+    width: 400px; /* Set width to 400px for store page */
+    height: 400px; /* Set height to 400px for store page */
     border-radius: 5px; /* Rounded corners for images */
 }
 
@@ -90,6 +90,14 @@ body.dark-mode header {
 
 body.dark-mode footer {
     background-color: #1e1e1e; /* Dark mode footer */
+}
+
+/* Styles for product detail page */
+.product-detail-image {
+    width: 2048px; /* Set width for product detail images */
+    height: 2048px; /* Set height for product detail images */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the detail image */
 }
 
 /* Add any additional styles as needed */
