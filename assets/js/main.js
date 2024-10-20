@@ -1,255 +1,73 @@
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-(function($) {
-
-	var	$window = $(window),
-		$body = $('body'),
-		$wrapper = $('#wrapper'),
-		$header = $('#header'),
-		$nav = $('#nav'),
-		$main = $('#main'),
-		$navPanelToggle, $navPanel, $navPanelInner;
-
-	// Breakpoints.
-	breakpoints({
-		default:   ['1681px',   null       ],
-		xlarge:    ['1281px',   '1680px'   ],
-		large:     ['981px',    '1280px'   ],
-		medium:    ['737px',    '980px'    ],
-		small:     ['481px',    '736px'    ],
-		xsmall:    ['361px',    '480px'    ],
-		xxsmall:   [null,       '360px'    ]
-	});
-
-	/**
-	 * Applies parallax scrolling to an element's background image.
-	 * @return {jQuery} jQuery object.
-	 */
-	$.fn._parallax = function(intensity) {
-		var	$window = $(window),
-			$this = $(this);
-
-		if (this.length == 0 || intensity === 0)
-			return $this;
-
-		if (this.length > 1) {
-			for (var i=0; i < this.length; i++)
-				$(this[i])._parallax(intensity);
-			return $this;
-		}
-
-		if (!intensity)
-			intensity = 0.25;
-
-		$this.each(function() {
-			var $t = $(this),
-				$bg = $('<div class="bg"></div>').appendTo($t),
-				on, off;
-
-			on = function() {
-				$bg
-					.removeClass('fixed')
-					.css('transform', 'matrix(1,0,0,1,0,0)');
-				$window.on('scroll._parallax', function() {
-					var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
-					$bg.css('transform', 'matrix(1,0,0,1,0,' + (pos * intensity) + ')');
-				});
-			};
-
-			off = function() {
-				$bg
-					.addClass('fixed')
-					.css('transform', 'none');
-				$window.off('scroll._parallax');
-			};
-
-			// Disable parallax on ..
-			if (browser.name == 'ie' || browser.name == 'edge' || window.devicePixelRatio > 1 || browser.mobile)
-				off();
-			else {
-				breakpoints.on('>large', on);
-				breakpoints.on('<=large', off);
-			}
-		});
-
-		$window
-			.off('load._parallax resize._parallax')
-			.on('load._parallax resize._parallax', function() {
-				$window.trigger('scroll');
-			});
-
-		return $(this);
-	};
-
-	// Play initial animations on page load.
-	$window.on('load', function() {
-		window.setTimeout(function() {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
-
-	// Scrolly.
-	$('.scrolly').scrolly();
-
-	// Background.
-	$wrapper._parallax(0.925);
-
-	// Nav Panel.
-	// Toggle.
-	$navPanelToggle = $('<a href="#navPanel" id="navPanelToggle">Menu</a>').appendTo($wrapper);
-
-	// Change toggle styling once we've scrolled past the header.
-	$header.scrollex({
-		bottom: '5vh',
-		enter: function() {
-			$navPanelToggle.removeClass('alt');
-		},
-		leave: function() {
-			$navPanelToggle.addClass('alt');
-		}
-	});
-
-	// Panel.
-	$navPanel = $(
-		'<div id="navPanel">' +
-			'<nav>' +
-			'</nav>' +
-			'<a href="#navPanel" class="close"></a>' +
-		'</div>'
-	).appendTo($body).panel({
-		delay: 500,
-		hideOnClick: true,
-		hideOnSwipe: true,
-		resetScroll: true,
-		resetForms: true,
-		side: 'right',
-		target: $body,
-		visibleClass: 'is-navPanel-visible'
-	});
-
-	// Get inner.
-	$navPanelInner = $navPanel.children('nav');
-
-	// Move nav content on breakpoint change.
-	var $navContent = $nav.children();
-
-	breakpoints.on('>medium', function() {
-		// NavPanel -> Nav.
-		$navContent.appendTo($nav);
-		// Flip icon classes.
-		$nav.find('.icons, .icon').removeClass('alt');
-	});
-
-	breakpoints.on('<=medium', function() {
-		// Nav -> NavPanel.
-		$navContent.appendTo($navPanelInner);
-		// Flip icon classes.
-		$navPanelInner.find('.icons, .icon').addClass('alt');
-	});
-
-	// Hack: Disable transitions on WP.
-	if (browser.os == 'wp' && browser.osVersion < 10)
-		$navPanel.css('transition', 'none');
-
-	// Intro.
-	var $intro = $('#intro');
-
-	if ($intro.length > 0) {
-		// Hack: Fix flex min-height on IE.
-		if (browser.name == 'ie') {
-			$window.on('resize.ie-intro-fix', function() {
-				var h = $intro.height();
-				if (h > $window.height())
-					$intro.css('height', 'auto');
-				else
-					$intro.css('height', h);
-			}).trigger('resize.ie-intro-fix');
-		}
-
-		// Hide intro on scroll (> small).
-		breakpoints.on('>small', function() {
-			$main.unscrollex();
-			$main.scrollex({
-				mode: 'bottom',
-				top: '25vh',
-				bottom: '-50vh',
-				enter: function() {
-					$intro.addClass('hidden');
-				},
-				leave: function() {
-					$intro.removeClass('hidden');
-				}
-			});
-		});
-
-		// Hide intro on scroll (<= small).
-		breakpoints.on('<=small', function() {
-			$main.unscrollex();
-			$main.scrollex({
-				mode: 'middle',
-				top: '15vh',
-				bottom: '-15vh',
-				enter: function() {
-					$intro.addClass('hidden');
-				},
-				leave: function() {
-					$intro.removeClass('hidden');
-				}
-			});
-		});
-	}
-
-	// Get the toggle button and body element
-const toggleButton = document.querySelector('.toggle-button');
+// Light and Dark Mode Toggle
+const toggleButton = document.getElementById('mode-toggle');
 const body = document.body;
 
-// Function to toggle dark mode
-function toggleDarkMode() {
+toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-
-    // Save the current mode to local storage
     if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('mode', 'dark');
+        toggleButton.textContent = 'Switch to Light Mode';
     } else {
-        localStorage.setItem('theme', 'light');
-    }
-}
-
-// Event listener for the toggle button
-toggleButton.addEventListener('click', toggleDarkMode);
-
-// Check for saved user preference on page load
-window.addEventListener('load', () => {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark') {
-        body.classList.add('dark-mode');
+        localStorage.setItem('mode', 'light');
+        toggleButton.textContent = 'Switch to Dark Mode';
     }
 });
 
+// Load mode from localStorage
+window.addEventListener('DOMContentLoaded', () => {
+    const mode = localStorage.getItem('mode') || 'light';
+    body.classList.toggle('dark-mode', mode === 'dark');
+    toggleButton.textContent = mode === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+});
 
+// Account Management
+const accounts = []; // Store user accounts in an array (for demo purposes)
 
-	// Check for saved user preference in local storage
-	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+document.getElementById('create-account-form')?.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const username = event.target.username.value;
+    const password = event.target.password.value;
 
-	// Apply the saved theme if it exists
-	if (currentTheme) {
-		$body.toggleClass('dark-mode', currentTheme === 'dark');
-	}
+    if (username && password) {
+        accounts.push({ username, password });
+        alert('Account created successfully!');
+        event.target.reset(); // Reset the form
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
 
-	// Event listener for the theme toggle button
-	themeToggle.addEventListener('click', () => {
-		$body.toggleClass('dark-mode');
+document.getElementById('login-form')?.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const username = event.target.username.value;
+    const password = event.target.password.value;
 
-		// Save the user's preference in local storage
-		if ($body.hasClass('dark-mode')) {
-			localStorage.setItem('theme', 'dark');
-		} else {
-			localStorage.setItem('theme', 'light');
-		}
-	});
+    const account = accounts.find(acc => acc.username === username && acc.password === password);
+    if (account) {
+        alert('Login successful!');
+        // Redirect to user account page or perform further actions
+    } else {
+        alert('Invalid username or password.');
+    }
+});
 
-})(jQuery);
+// Product Page Functionality
+const productOptions = document.getElementById('product-options');
+const priceDisplay = document.getElementById('price');
+
+// Update price based on selected option
+if (productOptions) {
+    productOptions.addEventListener('change', () => {
+        const selectedOption = productOptions.options[productOptions.selectedIndex];
+        const price = selectedOption.getAttribute('data-price');
+        priceDisplay.textContent = `Price: $${price}`;
+    });
+}
+
+// Optionally, you can add functionality for the "Add to Cart" button
+document.getElementById('add-to-cart')?.addEventListener('click', () => {
+    const selectedProduct = productOptions.value;
+    const selectedOption = productOptions.options[productOptions.selectedIndex];
+    const selectedPrice = selectedOption.getAttribute('data-price');
+    alert(`Added ${selectedProduct} to cart for $${selectedPrice}`);
+});
