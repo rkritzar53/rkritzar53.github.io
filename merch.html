@@ -3,70 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Merch Store | River Kritzar</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div id="wrapper">
-        <header id="header">
-            <h1>River Kritzar</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="merch.html" class="active">Merch Store</a></li>
-                    <li><a href="account.html" class="account-button">Account</a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class="store-page">
+        <h1>Our Products</h1>
 
-        <main id="main">
-            <section>
-                <h2>Shop Our Merchandise</h2>
-                <div class="product-grid">
-                    <div class="product-item">
-                        <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p74_i1_w1200.jpeg?width=2400&optimize=medium" alt="Mug 11oz">
-                        <h3>Mug 11oz</h3>
-                        <p>Price: $6.82</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p72_i2_w1200.jpeg?width=2400&optimize=medium" alt="Can Holder">
-                        <h3>Can Holder</h3>
-                        <p>Price: $23.68</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i2_w1200.jpeg?width=2400&optimize=medium" alt="Magnetic Tough Cases">
-                        <h3>Magnetic Tough Cases</h3>
-                        <p>Price: $21.07</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p60_i24_w1200.jpeg?width=2400&optimize=medium" alt="Magnetic Tough Cases">
-                        <h3>Magnetic Tough Cases</h3>
-                        <p>Price: $13.82</p>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <!-- Product Grid -->
+        <div class="product-grid">
 
-        <footer id="footer">
-            <p>Connect with me:</p>
-            <div class="social-icons">
-                <a href="https://www.tiktok.com/@riverkritzar97" target="_blank" aria-label="TikTok"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/TikTok_logo.svg/1200px-TikTok_logo.svg.png" alt="TikTok"></a>
-                <a href="https://www.facebook.com/river.kritzar.18/" target="_blank" aria-label="Facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/riverkritzar/" target="_blank" aria-label="Instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/riverkritzar/" target="_blank" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt="LinkedIn"></a>
-                <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-messaging--messaging-webapp/" target="_blank" aria-label="Indeed"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Indeed_logo.svg/1024px-Indeed_logo.svg.png" alt="Indeed"></a>
+            <!-- Product 1: Phone Case -->
+            <div class="product-card">
+                <a href="product-phone-case.html">
+                    <img src="https://your-image-url.com/main-phone-case.jpg" alt="Phone Case">
+                    <h2>Impact-Resistant Phone Cases</h2>
+                    <p>$19.75</p>
+                </a>
             </div>
-            <p>&copy; 2024 River Kritzar. All rights reserved.</p>
-        </footer>
+
+            <!-- Product 2: T-Shirt -->
+            <div class="product-card">
+                <a href="product-tshirt.html">
+                    <img src="https://your-image-url.com/main-shirt.jpg" alt="T-Shirt">
+                    <h2>Comfortable T-Shirts</h2>
+                    <p>$24.99</p>
+                </a>
+            </div>
+
+            <!-- Product 3: Bag -->
+            <div class="product-card">
+                <a href="product-bag.html">
+                    <img src="https://your-image-url.com/main-bag.jpg" alt="Bag">
+                    <h2>Stylish Computer Bags</h2>
+                    <p>$34.99</p>
+                </a>
+            </div>
+
+            <!-- Add more products as needed -->
+
+        </div>
     </div>
-    <script src="assets/js/main.js"></script>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Store Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
