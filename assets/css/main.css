@@ -1,208 +1,98 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Default background for light mode */
-    color: #333; /* Default text color */
 }
 
-.container {
-    max-width: 800px; /* Limit the width for better readability */
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Add some padding */
-    border: 1px solid #ccc; /* Optional border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background for the container */
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1, h2, h3 {
-    margin-top: 20px; /* Consistent margin for headers */
-    margin-bottom: 10px; /* Space below headers */
-    color: #333; /* Header text color */
+header {
+    background: #0044cc; /* Header background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-p, ul {
-    margin: 10px 0; /* Space between paragraphs and lists */
-}
-
-/* Form styles */
-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px; /* Space above forms */
-}
-
-form label {
-    margin-bottom: 5px; /* Space below labels */
-}
-
-form input, form textarea {
-    margin-bottom: 15px; /* Space below inputs */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ccc; /* Border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
-}
-
-/* Submit button styles */
-form input[type="submit"] {
-    background-color: #007bff; /* Primary button color */
-    color: white; /* Text color for button */
-    border: none; /* No border */
-    padding: 10px; /* Padding inside button */
-    cursor: pointer; /* Pointer on hover */
-    border-radius: 4px; /* Rounded corners for button */
-}
-
-form input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-/* Footer styles */
-footer {
-    text-align: center; /* Center the footer text */
-    padding: 20px; /* Padding inside footer */
-    background-color: #333; /* Footer background */
-    color: #fff; /* Footer text color */
-}
-
-footer .social-icons {
-    margin-top: 10px; /* Space above social icons */
-}
-
-/* Light and Dark Mode */
-body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
-}
-
-body.dark-mode .container {
-    background-color: #1e1e1e; /* Dark container background */
-    border-color: #444; /* Darker border */
-}
-
-body.dark-mode form input, 
-body.dark-mode form textarea {
-    background-color: #333; /* Dark input background */
-    color: #e0e0e0; /* Light input text */
-    border-color: #555; /* Darker input border */
-}
-
-body.dark-mode footer {
-    background-color: #222; /* Dark footer background */
-}
-
-/* Social icons styles */
-.social-icons a {
-    margin: 0 10px; /* Space between icons */
-    color: #fff; /* Icon color */
-    text-decoration: none; /* No underline */
-}
-
-.social-icons a:hover {
-    color: #ccc; /* Lighter color on hover */
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
+nav ul {
+    list-style-type: none;
     padding: 0;
-    background-color: #fff; /* Default background for light mode */
-    color: #333; /* Default text color */
 }
 
-.container {
-    max-width: 800px; /* Limit the width for better readability */
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Add some padding */
-    border: 1px solid #ccc; /* Optional border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background for the container */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-h1, h2, h3 {
-    margin-top: 20px; /* Consistent margin for headers */
-    margin-bottom: 10px; /* Space below headers */
-    color: #333; /* Header text color */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-p, ul {
-    margin: 10px 0; /* Space between paragraphs and lists */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Form styles */
-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px; /* Space above forms */
+main {
+    background: #fff; /* Main background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    margin-bottom: 5px; /* Space below labels */
+section {
+    margin-bottom: 20px;
 }
 
-form input, form textarea {
-    margin-bottom: 15px; /* Space below inputs */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ccc; /* Border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
+h2 {
+    color: #0044cc; /* Section headers color */
+    border-bottom: 2px solid #ccc; /* Underline for section headers */
+    padding-bottom: 5px;
 }
 
-/* Submit button styles */
-form input[type="submit"] {
-    background-color: #007bff; /* Primary button color */
-    color: white; /* Text color for button */
-    border: none; /* No border */
-    padding: 10px; /* Padding inside button */
-    cursor: pointer; /* Pointer on hover */
-    border-radius: 4px; /* Rounded corners for button */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-/* Footer styles */
 footer {
-    text-align: center; /* Center the footer text */
-    padding: 20px; /* Padding inside footer */
-    background-color: #333; /* Footer background */
-    color: #fff; /* Footer text color */
+    background: #0044cc; /* Footer background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
 }
 
-footer .social-icons {
-    margin-top: 10px; /* Space above social icons */
+footer p {
+    margin: 5px 0;
 }
 
-/* Light and Dark Mode */
-body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+.social-icons {
+    margin: 10px 0;
 }
 
-body.dark-mode .container {
-    background-color: #1e1e1e; /* Dark container background */
-    border-color: #444; /* Darker border */
-}
-
-body.dark-mode form input, 
-body.dark-mode form textarea {
-    background-color: #333; /* Dark input background */
-    color: #e0e0e0; /* Light input text */
-    border-color: #555; /* Darker input border */
-}
-
-body.dark-mode footer {
-    background-color: #222; /* Dark footer background */
-}
-
-/* Social icons styles */
 .social-icons a {
-    margin: 0 10px; /* Space between icons */
-    color: #fff; /* Icon color */
-    text-decoration: none; /* No underline */
+    margin: 0 10px;
 }
 
-.social-icons a:hover {
-    color: #ccc; /* Lighter color on hover */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
