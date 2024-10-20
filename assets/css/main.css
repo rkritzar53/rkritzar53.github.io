@@ -59,8 +59,8 @@ nav a:hover {
 }
 
 .product-image {
-    max-width: 80%; /* Adjust the image width */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px; /* Set width to 150px */
+    height: 150px; /* Set height to 150px */
     border-radius: 5px; /* Rounded corners for images */
 }
 
