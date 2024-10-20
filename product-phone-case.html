@@ -3,79 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impact-Resistant Cases</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/product.js" defer></script>
+    <title>Product Page</title>
 </head>
 <body>
-    <div class="product-page">
-        <!-- Product Images Section -->
-        <div class="product-images">
-            <img id="main-product-image" src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p74_i1_w1200.jpeg?width=2400&optimize=medium" alt="Magnetic Tough Cases">
-            <div class="thumbnail-images">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i2_w1200.jpeg?width=2400&optimize=medium" onclick="changeMainImage(this.src)">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i1_w1200.jpeg?width=2400&optimize=medium">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i3_w1200.jpeg?width=2400&optimize=medium">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i4_w1200.jpeg?width=2400&optimize=medium">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i5_w1200.jpeg?width=2400&optimize=medium">
-                <img src="https://143767758.cdn6.editmysite.com/uploads/1/4/3/7/143767758/s413640542213441794_p59_i3_w1200.jpeg?width=2400&optimize=medium">
-            </div>
-        </div>
+    <header>
+        <h1>Product Name</h1>
+    </header>
 
-        <!-- Product Details Section -->
+    <main>
         <div class="product-details">
-            <h1>Magnetic Tough Cases</h1>
-            <p class="price">$21.07 <span>Excl. Tax</span></p>
+            <img src="path/to/your/image.jpg" alt="Product Image" class="product-image" />
+            <div class="product-info">
+                <p id="product-description">This is a great product that you will love!</p>
+                
+                <label for="product-models">Select an iPhone model:</label>
+                <select id="product-models">
+                    <option value="iphone-13">iPhone 13 - $21.07</option>
+                    <option value="iphone-13-mini">iPhone 13 Mini - $21.07</option>
+                    <option value="iphone-13-pro">iPhone 13 Pro - $21.07</option>
+                    <option value="iphone-13-pro-max">iPhone 13 Pro Max - $21.07</option>
+                    <option value="iphone-14">iPhone 14 - $21.07</option>
+                    <option value="iphone-14-plus">iPhone 14 Plus - $21.07</option>
+                    <option value="iphone-14-pro">iPhone 14 Pro - $21.07</option>
+                    <option value="iphone-14-pro-max">iPhone 14 Pro Max - $21.07</option>
+                    <option value="iphone-15">iPhone 15 - $21.07</option>
+                    <option value="iphone-15-plus">iPhone 15 Plus - $21.07</option>
+                    <option value="iphone-15-pro">iPhone 15 Pro - $21.07</option>
+                    <option value="iphone-15-pro-max">iPhone 15 Pro Max - $21.07</option>
+                    <option value="iphone-16">iPhone 16 - $21.07</option>
+                    <option value="iphone-16-plus">iPhone 16 Plus - $21.07</option>
+                    <option value="iphone-16-pro">iPhone 16 Pro - $21.07</option>
+                    <option value="iphone-16-pro-max">iPhone 16 Pro Max - $21.07</option>
+                </select>
 
-            <!-- Size Options (Phone Models) -->
-            <div class="product-options">
-                <label for="phone-model">Phone Model:</label>
-                <div class="phone-size-options">
-                    <button type="button">iPhone 11</button>
-                    <button type="button">iPhone 11 Pro</button>
-                    <button type="button">iPhone 11 Pro Max</button>
-                    <button type="button">Samsung Galaxy S22</button>
-                    <button type="button">Samsung Galaxy S22 Plus</button>
-                    <button type="button">Samsung Galaxy S22 Ultra</button>
-                    <button type="button">Samsung Galaxy S21</button>
-                    <button type="button">Samsung Galaxy S21 Plus</button>
-                    <button type="button">Samsung Galaxy S21 Ultra</button>
-                    <button type="button">iPhone 16</button>
-                    <button type="button">iPhone 16 Pro</button>
-                    <button type="button">iPhone 16 Plus</button>
-                    <button type="button">iPhone 16 Pro Max</button>
-                    <!-- Add more phone models as needed -->
-                </div>
+                <label for="surface-options">Select a surface finish:</label>
+                <select id="surface-options">
+                    <option value="glossy">Glossy - $21.07</option>
+                    <option value="matte">Matte - $21.07</option>
+                </select>
+
+                <p id="price">Price: $21.07</p>
+                <button id="add-to-cart">Add to Cart</button>
             </div>
-
-            <!-- Surface Options -->
-            <div class="product-options">
-                <label for="surface">Surface Finish:</label>
-                <div class="surface-options">
-                    <button type="button">Glossy</button>
-                    <button type="button">Matte</button>
-                </div>
-            </div>
-
-            <!-- Quantity Selector -->
-            <div class="quantity-section">
-                <div class="quantity-control">
-                    <button id="decrease-quantity">-</button>
-                    <input type="text" id="quantity" value="1">
-                    <button id="increase-quantity">+</button>
-                </div>
-            </div>
-
-            <!-- Add to Cart Button -->
-            <button class="add-to-cart">Add to Cart</button>
-
-            <a href="#" class="size-guide">View Size Guide</a>
-            <p class="return-policy">30 days return policy. See details.</p>
         </div>
-    </div>
+    </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Your Store Name. All rights reserved.</p>
-    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
