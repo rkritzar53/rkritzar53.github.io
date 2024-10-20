@@ -2,63 +2,80 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px 0; /* Added padding for spacing */
-    background-color: #007bff; /* Added background color for visual separation */
-    color: white; /* Changed text color for contrast */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    padding: 15px 0; /* Padding for header */
 }
 
-footer {
+header h1 {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 0; /* Added padding for spacing */
-    background-color: #007bff; /* Consistent background with header */
-    color: white; /* Changed text color for contrast */
-    border-radius: 8px; /* Rounded corners */
+    margin: 0; /* Remove default margin */
 }
 
-/* Product Details Styles */
-.product-details {
+nav {
+    text-align: center; /* Center navigation links */
+    margin: 10px 0; /* Add margin around navigation */
+}
+
+nav a {
+    color: white; /* Navigation link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Color on hover */
+}
+
+.product-list {
     display: flex;
-    flex-direction: row; /* Changed to row for better layout */
-    align-items: center; /* Centered vertically */
+    flex-wrap: wrap; /* Allow products to wrap to the next line */
+    justify-content: center; /* Center the product items */
+    margin: 20px; /* Margin around the product list */
+}
+
+.product-item {
     background: white;
-    padding: 20px;
+    border: 1px solid #ddd; /* Border color */
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px; /* Margin between product items */
+    text-align: center; /* Center text */
+    width: 200px; /* Set a fixed width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: transform 0.3s; /* Smooth transform */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .product-image {
-    max-width: 200px; /* Adjusted image size */
-    margin-right: 20px; /* Spacing between image and info */
+    max-width: 100%; /* Ensure image fits within the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
-.product-info {
-    margin-top: 0; /* Removed top margin for better alignment */
+footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
 }
 
-/* Button Styles */
-button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
+footer p {
+    margin: 0; /* Remove default margin */
 }
 
 /* Light and Dark Mode Styles */
@@ -67,13 +84,12 @@ body.dark-mode {
     color: #ffffff;
 }
 
-body.dark-mode .product-details {
-    background: #1e1e1e;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+body.dark-mode header {
+    background-color: #1e1e1e; /* Dark mode header */
 }
 
-/* Additional styles */
-footer {
-    text-align: center;
-    margin-top: 20px;
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Dark mode footer */
 }
+
+/* Add any additional styles as needed */
